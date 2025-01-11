@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .section-hero {
 	padding:80px 0 0;
-	background-image:url(img/hero.jpg);
+	background-image:url(img/zelhan-music-film-composer-background.webp);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:inherit;
@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6 {
 	top:0;
 	width:100%;
 	height:100%;
-	background:linear-gradient(to right,#3987f4,#cd3178);
+	background:linear-gradient(to right,#092e15,#001f24);
 	opacity:.9;
 }
 .section-hero .container,.section-hero .container h1,.section-hero .container h2,.section-hero .container h3,.section-hero .container h4 {
@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6 {
 	border-top-left-radius:20px;
 }
 .section-hero .btn-default,.section-hero .btn-success {
-	box-shadow:0px 5px 20px #607382;
+	box-shadow:0px 5px 25px #3a566c;
 	min-width:170px;
 	padding:17px 20px;
 	border-radius:30px;
@@ -113,7 +113,7 @@ section#testimonials .card {
 	margin-bottom:30px;
 }
 .margin-bottom40 {
-	margin-bottom:40px;
+	margin-bottom:30px;
 }
 .margin-bottom50 {
 	margin-bottom:50px;
