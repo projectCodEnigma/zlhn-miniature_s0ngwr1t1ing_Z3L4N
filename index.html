@@ -1,115 +1,501 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Discover the music and journey of Zelhan, a Cebuano artist blending Visayan culture with alternative rock and pop. Explore his biography and latest tracks." />
-<meta name="keywords" content="Zelhan, Cebuano artist, Visayan music, alternative rock, Cebuano pop, Zelhan biography" />
-<meta name="author" content="Zelhan">
-<link rel="icon" href="img/favicon.jpg">
-<title>Zelhan - Visayan Musical Artist</title>
-<!-- Font Awesome CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link href="audiolanding.css" rel="stylesheet">
-<!-- Jquery -->
-<script src="js/jquery.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+  <title>Zelhan – Visayan (Cebuano) Singer-Songwriter | Commissions & Spotify</title>
+  <meta name="description" content="Listen to Zelhan’s Cebuano pop/alternative songs and commission a custom track for weddings, brands, and special moments. Stream on Spotify, book performances, view EPK." />
+  <link rel="preconnect" href="https://open.spotify.com">
+  <meta property="og:title" content="Zelhan – Visayan (Cebuano) Singer-Songwriter" />
+  <meta property="og:description" content="Cebuano pop & alternative. Stream on Spotify or commission a custom song." />
+  <meta property="og:image" content="https://zelhan.com/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4', /* teal/brand */
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63'
+            }
+          },
+          boxShadow: {
+            'elev': '0 10px 30px rgba(2, 6, 23, .35)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* smooth scroll + focus ring */
+    html{scroll-behavior:smooth}
+    .focus-ring:focus-visible{outline:2px solid #06b6d4; outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD MusicArtist + Offer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Zelhan",
+    "genre": ["Pop", "Alternative"],
+    "inLanguage": ["ceb","en"],
+    "url": "https://zelhan.com",
+    "sameAs": [
+      "https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg",
+      "https://instagram.com/zelhan",
+      "https://web.facebook.com/zelhantv",
+      "https://x.com/zelhantv",
+      "https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA",
+      "https://zelhantv.com"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "Custom Song Commission",
+      "availability": "https://schema.org/InStock",
+      "url": "https://zelhan.com#commissions"
+    }
+  }
+  </script>
 </head>
-<body>
 
-<!-- BEGIN HERO ================================================== -->
-<div class="section-hero">
-    <div class="container text-center">
-        <h1>Zelhan - Visayan Musical Artist</h1>
-        <p class="lead">
-            "Larga Ta (Let's Go)," "Pauli Na Ko," and "Ikaw Ra" — just a glimpse into the creative world of Zelhan. Explore his music and songwriting journey.
-        </p>
-        <p>
-            <a href='https://linktr.ee/zelhan' class="btn btn-default"><i class="fa fa-link"></i> Linktree Bio</a>
-            <a href='https://soundcloud.com/zelhan' class="btn btn-default"><i class="fa fa-soundcloud"></i> SoundCloud</a>
-            <a href='https://instagram.com/zelhan' class="btn btn-primary"><i class="fa fa-instagram"></i> Instagram</a>
-            <a href='https://facebook.com/zelhan' class="btn btn-success"><i class="fa fa-facebook"></i> Facebook</a>
-        </p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6nD6CgcPSwWkPrhpydXAqU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <div class="mt-4">
-            <a href="/music" class="btn btn-info">Listen to My Music</a>
-            <a href="/commission" class="btn btn-warning">Commission a Song</a>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500/30">
+  <!-- Top Notice / Sticky CTA -->
+  <div id="topbar" class="fixed inset-x-0 top-0 z-50 hidden md:block">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="mt-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur flex items-center justify-between px-4 py-2 text-sm">
+        <span>🎧 Join <span class="font-semibold">1,281,384+</span> listeners — Cebuano music that travels.</span>
+        <div class="flex gap-2">
+          <a href="#listen" class="focus-ring rounded-xl bg-white/10 px-3 py-1.5 hover:bg-white/20">Play Now</a>
+          <a href="#commissions" class="focus-ring rounded-xl bg-brand-500 px-3 py-1.5 font-medium text-slate-900 hover:bg-brand-400">Commission a Song</a>
         </div>
+      </div>
     </div>
-</div>
-<!-- END HERO ================================================== -->
+  </div>
 
-<!-- About Section -->
-<div class="section-about">
-    <div class="container">
-        <h2 class="text-center">About Zelhan</h2>
-        <p>Zelhan is a Cebuano musical artist known for blending Visayan culture with alternative rock and pop. His journey began with the release of "Ikaw Ra" in 2009, and he continues to captivate audiences with his unique sound and dedication to Cebuano music.</p>
-        <div class="text-center">
-            <a href="/about" class="btn btn-secondary">Learn More</a>
-        </div>
-    </div>
-</div>
-
-<!-- Featured Music Section -->
-<div class="section-music">
-    <div class="container">
-        <h2 class="text-center">Featured Tracks</h2>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <h3>Ikaw Ra</h3>
-                <p>The iconic track that started it all in 2009.</p>
-                <a href="https://youtu.be/Er-Wj-Zmq_g?si=E52RPbCXvfzS9NHY" class="btn btn-info" target="_blank">Listen Now</a>
-            </div>
-            <div class="col-md-4 text-center">
-                <h3>Pauli Na Ko</h3>
-                <p>A heartfelt single showcasing Zelhan's evolving artistry.</p>
-                <a href="https://open.spotify.com/track/4BExhTnhZluCrSygfHa0jS?si=f4f1ec778bf84f9d" class="btn btn-info" target="_blank">Listen Now</a>
-            </div>
-            <div class="col-md-4 text-center">
-                <h3>Pagtukod Sa Dugay Nga Panaw</h3>
-                <p>The latest album celebrating his Cebuano roots.</p>
-                <a href="https://open.spotify.com/album/14a5L976cOVUVekOST0UOE?si=Z-RZ_tDVQiK6frpH7qdmEg" class="btn btn-info" target="_blank">Listen Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Connect Section -->
-<div class="section-connect">
-    <div class="container text-center">
-        <h2>Connect with Zelhan</h2>
-        <p>Follow Zelhan on social media and join the community to stay updated on his latest music and events.</p>
-        <div class="social-links">
-            <a href="https://facebook.com/zelhan" class="btn btn-success" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-            <a href="https://youtube.com/zelhan" class="btn btn-danger" target="_blank"><i class="fa fa-youtube"></i> YouTube</a>
-            <a href="https://discord.com/zelhan" class="btn btn-primary" target="_blank"><i class="fa fa-comment"></i> Discord</a>
-        </div>
-    </div>
-</div>
-
-<!-- Footer Navigation -->
-<footer class="text-center mt-4">
-    <nav>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="/">Home</a></li>
-            <li class="list-inline-item"><a href="/about/">About</a></li>
-            <li class="list-inline-item"><a href="/music/">Music</a></li>
-            <li class="list-inline-item"><a href="/songwriting-course-book/">Songwriting Course Book</a></li>
-            <li class="list-inline-item"><a href="https://soundcloud.com/zelhan">SoundCloud</a></li>
-            <li class="list-inline-item"><a href="https://instagram.com/zelhan">Instagram</a></li>
-            <li class="list-inline-item"><a href="https://facebook.com/zelhantv">Facebook</a></li>
-        </ul>
+  <!-- Nav -->
+  <header class="relative z-40">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 pt-20 md:pt-24">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-500/20 ring-1 ring-brand-500/30">
+          🎵
+        </span>
+        <span class="text-lg font-semibold tracking-tight">Zelhan</span>
+      </a>
+      <button id="menuBtn" class="focus-ring inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 md:hidden">
+        Menu
+      </button>
+      <ul id="menu" class="hidden items-center gap-6 md:flex">
+        <li><a class="focus-ring hover:text-brand-300" href="#listen">Music</a></li>
+        <li><a class="focus-ring hover:text-brand-300" href="#commissions">Commissions</a></li>
+        <li><a class="focus-ring hover:text-brand-300" href="#epk">EPK</a></li>
+        <li><a class="focus-ring hover:text-brand-300" href="#contact">Contact</a></li>
+        <li><a class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-medium text-slate-900 hover:bg-brand-400" href="#commissions">Start a Commission</a></li>
+      </ul>
     </nav>
-    <p>&copy; 2025 Zelhan. All Rights Reserved. <a href="http://www.zeldigital.com">A ZelDigital Company</a></p>
-</footer>
+    <div id="mobileNav" class="mx-auto mt-3 hidden max-w-6xl px-4 md:hidden">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur">
+        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#listen">Music</a>
+        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#commissions">Commissions</a>
+        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#epk">EPK</a>
+        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<!-- Bootstrap core JavaScript ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-700/20 via-slate-900 to-slate-950"></div>
+      <div class="pointer-events-none absolute -inset-x-20 -top-40 h-[32rem] rounded-[4rem] bg-brand-500/10 blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pb-12 pt-10 md:grid-cols-2 md:pb-20">
+      <div>
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
+          <span class="inline-flex h-2 w-2 rounded-full bg-brand-400"></span>
+          Over <span class="font-semibold text-white">1.28M</span> streams on Spotify
+        </div>
+        <h1 class="text-4xl font-black tracking-tight sm:text-5xl">
+          Visayan Pop & Alternative — <span class="text-brand-300">Zelhan</span>
+        </h1>
+        <p class="mt-4 text-slate-300">
+          Cebuano storytelling meets modern pop. From viral hooks like <em>Kaon Na Ta (Let’s Eat)</em> to heartfelt ballads,
+          Zelhan crafts songs for fans—and custom songs for your moments.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 text-base font-semibold text-slate-900 shadow-elev hover:bg-brand-400">Play on Spotify</a>
+          <a href="#commissions" class="focus-ring rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-base font-semibold hover:bg-white/10">Commission a Song</a>
+        </div>
+        <div class="mt-6 text-sm text-slate-400">As heard on local radio & events • Cebu, PH</div>
+      </div>
+
+      <!-- Spotify embed (lazy) -->
+      <div class="relative">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-elev backdrop-blur">
+          <iframe 
+            data-testid="embed-iframe" 
+            style="border-radius:12px" 
+            src="https://open.spotify.com/embed/artist/1HgCqz4lESpT3aAdTla5mi?utm_source=generator" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+        </div>
+        <p class="mt-3 text-xs text-slate-400">Tip: turn on captions for lyrics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof / Stream Stats -->
+  <section id="listen" class="mx-auto max-w-6xl px-4 pb-16">
+    <div class="mb-6 flex items-end justify-between">
+      <h2 class="text-2xl font-bold tracking-tight">Top Tracks</h2>
+      <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" class="text-sm text-brand-300 hover:underline">Open Artist Page →</a>
+    </div>
+
+    <!-- Stats cards -->
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Kaon Na Ta -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+        <div class="flex items-start justify-between">
+          <h3 class="text-lg font-semibold">Kaon Na Ta (Let’s Eat)</h3>
+          <span class="rounded-full bg-brand-500/20 px-2 py-1 text-xs text-brand-200 ring-1 ring-brand-500/30">#1</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-300">Most streamed</p>
+        <p class="mt-4 text-3xl font-extrabold tracking-tight">1,281,384</p>
+        <a href="https://youtu.be/X3VR8pH_qhY?si=alf0D69m2xDZnyDG" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-brand-500 px-4 py-2 font-medium text-slate-900 hover:bg-brand-400">Watch on YouTube</a>
+      </article>
+
+      <!-- Busog Na -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+        <h3 class="text-lg font-semibold">Busog Na</h3>
+        <p class="mt-2 text-sm text-slate-300">Fan favorite</p>
+        <p class="mt-4 text-3xl font-extrabold tracking-tight">285,473</p>
+        <a href="https://youtu.be/2QmOqbb0vwI?si=TyosVQxO8TcHRGOc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-white/10 px-4 py-2 font-medium hover:bg-white/20">Watch on YouTube</a>
+      </article>
+
+      <!-- Ikaw Ra -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+        <h3 class="text-lg font-semibold">Ikaw Ra</h3>
+        <p class="mt-2 text-sm text-slate-300">The song that started it all</p>
+        <p class="mt-4 text-3xl font-extrabold tracking-tight">Legacy</p>
+        <a href="https://youtu.be/Er-Wj-Zmq_g?si=ClzKiPsDUQrV_okV" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-white/10 px-4 py-2 font-medium hover:bg-white/20">Watch on YouTube</a>
+      </article>
+    </div>
+
+    <!-- Latest Album: Ketchup -->
+    <div class="mt-10">
+      <div class="mb-6">
+        <h3 class="text-xl font-bold tracking-tight">Latest Release</h3>
+        <p class="mt-1 text-slate-300">Listen to Zelhan's newest single album</p>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-elev backdrop-blur">
+        <iframe 
+          data-testid="embed-iframe" 
+          style="border-radius:12px" 
+          src="https://open.spotify.com/embed/album/71vAI9GkNCGA3mIKlpUmJC?utm_source=generator" 
+          width="100%" 
+          height="352" 
+          frameBorder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Stream table + image proof -->
+    <div class="mt-10 grid items-start gap-8 md:grid-cols-2">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+        <h3 class="text-lg font-semibold">Latest Stream Snapshot</h3>
+        <p class="mt-1 text-sm text-slate-400">Updated Aug 16, 2025</p>
+        <div class="mt-4 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead class="text-left text-slate-400">
+              <tr>
+                <th class="pb-2 pr-4">Track</th>
+                <th class="pb-2 pr-4">Downloads</th>
+                <th class="pb-2">Streams</th>
+              </tr>
+            </thead>
+            <tbody class="[&_tr:not(:last-child)]:border-b [&_tr:not(:last-child)]:border-white/10">
+              <tr><td class="py-3 pr-4">Kaon Na Ta (Let’s Eat)</td><td class="py-3 pr-4">1</td><td class="py-3">1,281,384</td></tr>
+              <tr><td class="py-3 pr-4">Busog Na</td><td class="py-3 pr-4">0</td><td class="py-3">285,473</td></tr>
+              <tr><td class="py-3 pr-4">Di Ka Biyaan</td><td class="py-3 pr-4">0</td><td class="py-3">2,961</td></tr>
+              <tr><td class="py-3 pr-4">Langga</td><td class="py-3 pr-4">0</td><td class="py-3">3,704</td></tr>
+              <tr><td class="py-3 pr-4">Pauli Na Ko</td><td class="py-3 pr-4">0</td><td class="py-3">2,199</td></tr>
+              <tr><td class="py-3 pr-4">Salamat sa Tanan</td><td class="py-3 pr-4">0</td><td class="py-3">3,055</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <figure class="rounded-3xl border border-white/10 bg-white/5 p-3 shadow-elev backdrop-blur">
+        <img
+          src="https://i.ibb.co/hxnTDPDz/Screenshot-2025-08-16-013024.jpg"
+          alt="Latest Zelhan stream data screenshot (Kaon Na Ta 1,281,384 streams)"
+          class="rounded-2xl">
+        <figcaption class="mt-2 px-1 text-xs text-slate-400">Data: internal stream dashboard</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Commissions -->
+  <section id="commissions" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <div class="h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-800/20 via-slate-900 to-slate-950"></div>
+    </div>
+
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <div class="mb-8 max-w-2xl">
+        <h2 class="text-3xl font-black tracking-tight">Commission a Custom Song</h2>
+        <p class="mt-3 text-slate-300">
+          Make your story the next hit. Perfect for weddings, anniversaries, proposals, brand jingles, or creator intros.
+          Avg turnaround: 10–21 days • 50% deposit • Includes 1 revision.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-[1.2fr_.8fr]">
+        <!-- Form -->
+        <form class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+          <div class="grid gap-4 md:grid-cols-2">
+            <label class="block">
+              <span class="mb-1 block text-sm">Your Name</span>
+              <input required type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="Juan Dela Cruz">
+            </label>
+            <label class="block">
+              <span class="mb-1 block text-sm">Email</span>
+              <input required type="email" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="you@email.com">
+            </label>
+            <label class="block">
+              <span class="mb-1 block text-sm">Occasion</span>
+              <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                <option>Wedding</option><option>Anniversary</option><option>Birthday</option><option>Brand/Jingle</option><option>Other</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="mb-1 block text-sm">Language</span>
+              <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                <option>Cebuano</option><option>English</option><option>Bisaya-English Mix</option>
+              </select>
+            </label>
+            <label class="md:col-span-2 block">
+              <span class="mb-1 block text-sm">Story / Details</span>
+              <textarea rows="4" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="What should the song say? Names, fun memories, brand message..."></textarea>
+            </label>
+            <div class="grid gap-4 md:grid-cols-3 md:col-span-2">
+              <label class="block">
+                <span class="mb-1 block text-sm">Package</span>
+                <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                  <option>Demo</option><option>Studio</option><option>Studio + Lyric Video</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="mb-1 block text-sm">Deadline</span>
+                <input type="date" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+              </label>
+              <label class="block">
+                <span class="mb-1 block text-sm">Budget (USD)</span>
+                <input type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2" placeholder="$300–$1500">
+              </label>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <p class="text-xs text-slate-400">We’ll reply within 24 hours. Your info stays private.</p>
+            <button type="submit" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 font-semibold text-slate-900 hover:bg-brand-400">Get a Quote</button>
+          </div>
+        </form>
+
+        <!-- Selling points -->
+        <div class="grid gap-4">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h4 class="font-semibold">Why commission from Zelhan?</h4>
+            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+              <li>• Cebuano lyrics that resonate, with pop hooks that stick</li>
+              <li>• Clear creative process & one included revision</li>
+              <li>• Commercial licensing options for brands & creators</li>
+              <li>• 1.28M+ total streams as proof of audience appeal</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h4 class="font-semibold">Licensing</h4>
+            <p class="mt-2 text-sm text-slate-300">Personal • Creator (YouTube/TikTok) • Commercial (Brand/Jingle). Ask for rates and usage terms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid items-center gap-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-black tracking-tight">About Zelhan</h2>
+        <p class="mt-4 text-slate-300">
+          Zelhan is a Cebuano singer-songwriter blending Visayan storytelling with alternative pop.
+          His breakout single <strong>“Ikaw Ra”</strong> introduced his modern Bisaya sound, followed by heartfelt releases like
+          <strong>“Pauli Na Ko”</strong> and <strong>“Langga.”</strong> Today he writes custom songs for weddings, brands, and life moments—bringing Cebuano culture to global ears.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#epk" class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10">View EPK</a>
+          <a href="mailto:hello@zelhan.com" class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-semibold text-slate-900 hover:bg-brand-400">Book a Performance</a>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-3 shadow-elev backdrop-blur">
+        <img src="https://zelhan.com/press-photo.jpg" alt="Zelhan press photo" class="rounded-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- EPK -->
+  <section id="epk" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <div class="h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-900/10 via-slate-900 to-slate-950"></div>
+    </div>
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl font-black tracking-tight">EPK – Electronic Press Kit</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <a href="https://zelhan.com/press/Zelhan-EPK.pdf" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
+          <h3 class="font-semibold">Download EPK (PDF)</h3>
+          <p class="mt-1 text-sm text-slate-300">Bio, highlights, contact</p>
+          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Download →</span>
+        </a>
+        <a href="https://zelhan.com/press/press-photos.zip" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
+          <h3 class="font-semibold">Press Photos</h3>
+          <p class="mt-1 text-sm text-slate-300">Hi-res images</p>
+          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Download →</span>
+        </a>
+        <a href="mailto:booking@zelhan.com" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
+          <h3 class="font-semibold">Booking & Media</h3>
+          <p class="mt-1 text-sm text-slate-300">booking@zelhan.com</p>
+          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Email →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+      <div class="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h3 class="text-xl font-bold tracking-tight">Connect with Zelhan</h3>
+          <p class="mt-1 text-slate-300">Follow for new releases, behind-the-song, and show dates.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://web.facebook.com/zelhantv">Facebook</a>
+          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://instagram.com/zelhan">Instagram</a>
+          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://x.com/zelhantv">X (Twitter)</a>
+          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA">YouTube</a>
+          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://zelhantv.com">Blog</a>
+          <a class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-semibold text-slate-900 hover:bg-brand-400" href="#commissions">Start a Commission</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <!-- Main Footer Content -->
+      <div class="grid gap-8 md:grid-cols-4">
+        <!-- Brand & Description -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-500/20 ring-1 ring-brand-500/30">
+              🎵
+            </span>
+            <span class="text-lg font-semibold tracking-tight">Zelhan</span>
+          </div>
+          <p class="text-slate-300 mb-4">Cebuano singer-songwriter blending Visayan storytelling with modern pop. From viral hits to heartfelt ballads, Zelhan crafts songs that travel.</p>
+          <div class="flex gap-3">
+            <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="hover:text-brand-300">
+              <span class="sr-only">Spotify</span>
+              🎧
+            </a>
+            <a href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA" target="_blank" rel="noopener" class="hover:text-brand-300">
+              <span class="sr-only">YouTube</span>
+              ▶️
+            </a>
+            <a href="https://instagram.com/zelhan" target="_blank" rel="noopener" class="hover:text-brand-300">
+              <span class="sr-only">Instagram</span>
+              📸
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#listen" class="hover:text-brand-300">Music</a></li>
+            <li><a href="#commissions" class="hover:text-brand-300">Commissions</a></li>
+            <li><a href="#epk" class="hover:text-brand-300">EPK</a></li>
+            <li><a href="#contact" class="hover:text-brand-300">Contact</a></li>
+          </ul>
+        </div>
+
+                 <!-- Other Pages -->
+         <div>
+           <h4 class="font-semibold text-white mb-4">Other Pages</h4>
+           <ul class="space-y-2 text-sm">
+             <li><a href="about/index.html" class="hover:text-brand-300">About Page</a></li>
+             <li><a href="commission/index.html" class="hover:text-brand-300">Commission Page</a></li>
+             <li><a href="contact/index.html" class="hover:text-brand-300">Contact Page</a></li>
+             <li><a href="music/index.html" class="hover:text-brand-300">Music Page</a></li>
+             <li><a href="songwriting-course-book/index.html" class="hover:text-brand-300">Songwriting Course</a></li>
+             <li><a href="old-site/old-index.html" class="hover:text-brand-300">Old Site</a></li>
+           </ul>
+         </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="mt-12 pt-8 border-t border-white/10">
+        <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+          <p>© <span id="year"></span> Zelhan. All rights reserved.</p>
+          <div class="flex gap-4 text-sm">
+            <a href="#epk" class="hover:text-brand-300">EPK</a>
+            <a href="mailto:hello@zelhan.com" class="hover:text-brand-300">Contact</a>
+            <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="hover:text-brand-300">Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal JS -->
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('mobileNav');
+    const desktop = document.getElementById('menu');
+    btn?.addEventListener('click', () => mobile.classList.toggle('hidden'));
+
+    // show sticky topbar after scroll
+    const topbar = document.getElementById('topbar');
+    const revealAt = 180;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > revealAt) topbar.classList.remove('hidden');
+      else topbar.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
