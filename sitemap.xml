@@ -3,25 +3,41 @@
     <url>
         <loc>https://www.zelhan.com/</loc>
         <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://www.zelhan.com/about/</loc>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.zelhan.com/music/</loc>
-        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://www.zelhan.com/commission/</loc>
         <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://www.zelhan.com/contact/</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.zelhan.com/music/</loc>
         <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.zelhan.com/previous-albums/</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://www.zelhan.com/songwriting-course-book/</loc>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.zelhan.com/old-site/</loc>
+        <priority>0.3</priority>
+        <changefreq>yearly</changefreq>
     </url>
 </urlset>
