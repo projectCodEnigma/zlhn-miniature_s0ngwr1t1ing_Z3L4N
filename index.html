@@ -272,54 +272,79 @@
 
       <div class="grid gap-8 md:grid-cols-[1.2fr_.8fr]">
         <!-- Form -->
-        <form action="https://formsubmit.co/f19a290fbfe81ae9bb1a3aa909f1741d" method="POST" class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-          <div class="grid gap-4 md:grid-cols-2">
-            <label class="block">
-              <span class="mb-1 block text-sm">Your Name</span>
-              <input required type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="Juan Dela Cruz">
-            </label>
-            <label class="block">
-              <span class="mb-1 block text-sm">Email</span>
-              <input required type="email" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="you@email.com">
-            </label>
-            <label class="block">
-              <span class="mb-1 block text-sm">Occasion</span>
-              <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                <option>Wedding</option><option>Anniversary</option><option>Birthday</option><option>Brand/Jingle</option><option>Other</option>
-              </select>
-            </label>
-            <label class="block">
-              <span class="mb-1 block text-sm">Language</span>
-              <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                <option>Cebuano</option><option>English</option><option>Bisaya-English Mix</option>
-              </select>
-            </label>
-            <label class="md:col-span-2 block">
-              <span class="mb-1 block text-sm">Story / Details</span>
-              <textarea rows="4" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="What should the song say? Names, fun memories, brand message..."></textarea>
-            </label>
-            <div class="grid gap-4 md:grid-cols-3 md:col-span-2">
+       <form action="https://formsubmit.co/f19a290fbfe81ae9bb1a3aa909f1741d" method="POST" class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
+            <!-- FormSubmit helpers -->
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Custom Song Quote">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- change to your thank-you page if you have one -->
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you">
+          
+            <div class="grid gap-4 md:grid-cols-2">
               <label class="block">
-                <span class="mb-1 block text-sm">Package</span>
-                <select class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                  <option>Demo</option><option>Studio</option><option>Studio + Lyric Video</option>
+                <span class="mb-1 block text-sm">Your Name</span>
+                <input required name="name" type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="Juan Dela Cruz" autocomplete="name">
+              </label>
+          
+              <label class="block">
+                <span class="mb-1 block text-sm">Email</span>
+                <input required name="email" type="email" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="you@email.com" autocomplete="email">
+              </label>
+          
+              <label class="block">
+                <span class="mb-1 block text-sm">Occasion</span>
+                <select name="occasion" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                  <option value="Wedding">Wedding</option>
+                  <option value="Anniversary">Anniversary</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Brand/Jingle">Brand/Jingle</option>
+                  <option value="Other">Other</option>
                 </select>
               </label>
+          
               <label class="block">
-                <span class="mb-1 block text-sm">Deadline</span>
-                <input type="date" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                <span class="mb-1 block text-sm">Language</span>
+                <select name="language" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                  <option value="Cebuano">Cebuano</option>
+                  <option value="English">English</option>
+                  <option value="Bisaya-English Mix">Bisaya-English Mix</option>
+                </select>
               </label>
-              <label class="block">
-                <span class="mb-1 block text-sm">Budget (USD)</span>
-                <input type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2" placeholder="$300–$1500">
+          
+              <label class="md:col-span-2 block">
+                <span class="mb-1 block text-sm">Story / Details</span>
+                <textarea name="story" rows="4" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="What should the song say? Names, fun memories, brand message..."></textarea>
               </label>
+          
+              <div class="grid gap-4 md:grid-cols-3 md:col-span-2">
+                <label class="block">
+                  <span class="mb-1 block text-sm">Package</span>
+                  <select name="package" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                    <option value="Demo">Demo</option>
+                    <option value="Studio">Studio</option>
+                    <option value="Studio + Lyric Video">Studio + Lyric Video</option>
+                  </select>
+                </label>
+          
+                <label class="block">
+                  <span class="mb-1 block text-sm">Deadline</span>
+                  <input name="deadline" type="date" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
+                </label>
+          
+                <label class="block">
+                  <span class="mb-1 block text-sm">Budget (USD)</span>
+                  <input name="budget" type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2" placeholder="$300–$1500" inputmode="decimal">
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="mt-6 flex items-center justify-between">
-            <p class="text-xs text-slate-400">We’ll reply within 24 hours. Your info stays private.</p>
-            <button type="submit" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 font-semibold text-slate-900 hover:bg-brand-400">Get a Quote</button>
-          </div>
-        </form>
+          
+            <div class="mt-6 flex items-center justify-between">
+              <p class="text-xs text-slate-400">We’ll reply within 24 hours. Your info stays private.</p>
+              <button type="submit" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 font-semibold text-slate-900 hover:bg-brand-400">Get a Quote</button>
+            </div>
+          </form>
+
+
 
         <!-- Selling points -->
         <div class="grid gap-4">
@@ -500,5 +525,6 @@
   </script>
 </body>
 </html>
+
 
 
