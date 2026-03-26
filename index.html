@@ -1,67 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F9J2FZ6F7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F9J2FZ6F7L');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9J2FZ6F7L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F9J2FZ6F7L');
+  </script>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T97XSWV7');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T97XSWV7');</script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
   <title>Zelhan – Visayan (Cebuano) Singer-Songwriter | Commissions & Spotify</title>
-  <meta name="description" content="Listen to Zelhan’s Cebuano pop/alternative songs and commission a custom track for weddings, brands, and special moments. Stream on Spotify, book performances, view EPK." />
-  <link rel="preconnect" href="https://open.spotify.com">
+  <meta name="description" content="Listen to Zelhan's Cebuano pop/alternative songs and commission a custom track for weddings, brands, and special moments. Stream on Spotify, book performances, view EPK." />
   <meta property="og:title" content="Zelhan – Visayan (Cebuano) Singer-Songwriter" />
   <meta property="og:description" content="Cebuano pop & alternative. Stream on Spotify or commission a custom song." />
   <meta property="og:image" content="https://zelhan.com/og-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#ecfeff',
-              100: '#cffafe',
-              200: '#a5f3fc',
-              300: '#67e8f9',
-              400: '#22d3ee',
-              500: '#06b6d4', /* teal/brand */
-              600: '#0891b2',
-              700: '#0e7490',
-              800: '#155e75',
-              900: '#164e63'
-            }
-          },
-          boxShadow: {
-            'elev': '0 10px 30px rgba(2, 6, 23, .35)'
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    /* smooth scroll + focus ring */
-    html{scroll-behavior:smooth}
-    .focus-ring:focus-visible{outline:2px solid #06b6d4; outline-offset:2px}
-  </style>
 
-  <!-- JSON-LD MusicArtist + Offer -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -71,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "inLanguage": ["ceb","en"],
     "url": "https://zelhan.com",
     "sameAs": [
-      "https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg",
+      "https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi",
       "https://instagram.com/zelhan",
       "https://web.facebook.com/zelhantv",
       "https://x.com/zelhantv",
@@ -86,466 +52,1234 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:     #0d0b08;
+      --paper:   #111009;
+      --warm-1:  #1a1710;
+      --warm-2:  #252118;
+      --warm-3:  #332e20;
+      --gold:    #c9973a;
+      --gold-lt: #e8b84b;
+      --amber:   #f5a623;
+      --cream:   #f0e8d5;
+      --muted:   #8a7f6a;
+      --border:  rgba(201,151,58,.15);
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-body:    'DM Sans', sans-serif;
+      --ff-mono:    'DM Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--cream);
+      font-family: var(--ff-body);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── GRAIN OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px;
+    }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--ink); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ─── TYPOGRAPHY ─── */
+    .display { font-family: var(--ff-display); }
+    .mono    { font-family: var(--ff-mono); }
+
+    /* ─── FOCUS ─── */
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+    /* ─── NAV ─── */
+    .nav {
+      position: fixed;
+      inset-inline: 0;
+      top: 0;
+      z-index: 100;
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background .4s, padding .4s, backdrop-filter .4s;
+    }
+    .nav.scrolled {
+      background: rgba(13,11,8,.85);
+      backdrop-filter: blur(16px);
+      padding: .75rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--ff-display);
+      font-size: 1.4rem;
+      font-weight: 900;
+      font-style: italic;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -.01em;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: .8rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-cta {
+      font-size: .78rem !important;
+      letter-spacing: .1em !important;
+      text-transform: uppercase !important;
+      color: var(--ink) !important;
+      background: var(--gold);
+      padding: .55rem 1.2rem;
+      border-radius: 2px;
+      font-weight: 500;
+      transition: background .2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-lt) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: .3rem;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--cream);
+      transition: transform .3s, opacity .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: rgba(13,11,8,.97);
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--ff-display);
+      font-size: 2.5rem;
+      font-style: italic;
+      color: var(--cream);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .mobile-nav a:hover { color: var(--gold); }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 70% 40%, rgba(201,151,58,.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(245,166,35,.06) 0%, transparent 60%),
+        var(--paper);
+    }
+    .hero-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,151,58,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,151,58,.05) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    }
+    .hero-left {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 3rem 5rem 3rem;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-family: var(--ff-mono);
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px; height: 1px;
+      background: var(--gold);
+    }
+    .hero-title {
+      font-family: var(--ff-display);
+      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -.02em;
+      color: var(--cream);
+    }
+    .hero-title em {
+      display: block;
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-sub {
+      margin-top: 1.5rem;
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 42ch;
+      line-height: 1.75;
+    }
+    .hero-sub strong { color: var(--cream); font-weight: 400; }
+    .hero-stat {
+      display: inline-flex;
+      align-items: baseline;
+      gap: .4rem;
+      margin-top: 2.5rem;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: rgba(201,151,58,.04);
+    }
+    .hero-stat-num {
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold-lt);
+    }
+    .hero-stat-label {
+      font-family: var(--ff-mono);
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 2rem;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: .82rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .85rem 1.8rem;
+      border-radius: 2px;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: transparent;
+      color: var(--cream);
+      font-size: .82rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .85rem 1.8rem;
+      border-radius: 2px;
+      border: 1px solid rgba(240,232,213,.2);
+      transition: border-color .2s, color .2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    .hero-right {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 3rem 5rem 1rem;
+    }
+    .embed-shell {
+      width: 100%;
+      max-width: 380px;
+      position: relative;
+    }
+    .embed-shell::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      pointer-events: none;
+    }
+    .embed-shell::after {
+      content: '';
+      position: absolute;
+      top: -24px;
+      right: -24px;
+      width: 80px; height: 80px;
+      background: var(--gold);
+      opacity: .12;
+      border-radius: 50%;
+      filter: blur(20px);
+    }
+    .embed-shell iframe { border-radius: 4px; display: block; }
+
+    /* ─── MARQUEE ─── */
+    .marquee-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: .9rem 0;
+      overflow: hidden;
+      background: var(--warm-1);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 3rem;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      font-family: var(--ff-mono);
+      font-size: .72rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .marquee-item .dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ─── SECTION COMMON ─── */
+    .section { padding: 6rem 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-family: var(--ff-mono);
+      font-size: .68rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px; height: 1px;
+      background: var(--gold);
+    }
+    .section-title {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.1;
+      color: var(--cream);
+      letter-spacing: -.02em;
+    }
+
+    /* ─── TRACKS SECTION ─── */
+    .tracks-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      margin-top: 3rem;
+      border: 1.5px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .track-card {
+      background: var(--warm-1);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background .3s;
+    }
+    .track-card:hover { background: var(--warm-2); }
+    .track-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      font-family: var(--ff-display);
+      font-size: 5rem;
+      font-weight: 900;
+      font-style: italic;
+      color: rgba(201,151,58,.07);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .track-badge {
+      display: inline-block;
+      font-family: var(--ff-mono);
+      font-size: .62rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: .25rem .6rem;
+      border-radius: 2px;
+      margin-bottom: .8rem;
+    }
+    .track-name {
+      font-family: var(--ff-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.2;
+    }
+    .track-streams {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold-lt);
+      margin-top: 1rem;
+    }
+    .track-desc { font-size: .85rem; color: var(--muted); margin-top: .3rem; }
+    .track-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      margin-top: 1.5rem;
+      font-family: var(--ff-mono);
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      transition: gap .2s;
+    }
+    .track-link:hover { gap: .7rem; }
+
+    /* Latest album embed */
+    .album-wrap {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .album-info-label { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: .8rem; }
+    .album-title { font-family: var(--ff-display); font-size: 2.5rem; font-weight: 900; font-style: italic; color: var(--cream); }
+    .album-desc { margin-top: 1rem; font-size: .95rem; color: var(--muted); line-height: 1.8; }
+    .album-embed { border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
+    .album-embed iframe { display: block; }
+
+    /* Stream table */
+    .stats-row {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .table-shell {
+      background: var(--warm-1);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .table-head {
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--ff-mono);
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .data-table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+    .data-table th {
+      padding: .75rem 1.5rem;
+      text-align: left;
+      font-family: var(--ff-mono);
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: .85rem 1.5rem;
+      color: var(--cream);
+      border-bottom: 1px solid rgba(201,151,58,.06);
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: rgba(201,151,58,.04); }
+    .td-streams { font-family: var(--ff-mono); color: var(--gold-lt); }
+
+    .proof-img {
+      background: var(--warm-1);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .proof-img img { width: 100%; display: block; }
+    .proof-caption { padding: .75rem 1rem; font-size: .75rem; color: var(--muted); font-family: var(--ff-mono); }
+
+    /* ─── COMMISSIONS ─── */
+    .commissions-section {
+      background: var(--warm-1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .commissions-section::before {
+      content: '"';
+      position: absolute;
+      top: -2rem;
+      right: 3%;
+      font-family: var(--ff-display);
+      font-size: 28rem;
+      font-style: italic;
+      color: rgba(201,151,58,.04);
+      pointer-events: none;
+      line-height: 1;
+    }
+    .commission-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .comm-form {
+      background: var(--warm-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2.5rem;
+    }
+    .field-group { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .field { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
+    .field-label {
+      font-family: var(--ff-mono);
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      background: var(--warm-1);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: .75rem 1rem;
+      color: var(--cream);
+      font-family: var(--ff-body);
+      font-size: .9rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color .2s;
+      appearance: none;
+    }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus { border-color: var(--gold); }
+    .field input::placeholder,
+    .field textarea::placeholder { color: rgba(138,127,106,.5); }
+    .field select option { background: var(--ink); }
+    .field textarea { resize: vertical; min-height: 100px; }
+    .three-col { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
+    .form-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; gap: 1rem; }
+    .form-note { font-size: .78rem; color: var(--muted); max-width: 22ch; }
+
+    .comm-aside { padding-top: .5rem; }
+    .aside-intro { font-family: var(--ff-display); font-size: 1.8rem; font-style: italic; color: var(--cream); line-height: 1.25; margin-bottom: 2rem; }
+    .aside-intro span { color: var(--gold); }
+    .aside-list { list-style: none; display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2rem; }
+    .aside-list li { display: flex; align-items: flex-start; gap: .8rem; font-size: .9rem; color: var(--muted); }
+    .aside-list li::before { content: '↗'; color: var(--gold); flex-shrink: 0; font-size: .8rem; margin-top: .15rem; }
+
+    .aside-cards { display: flex; flex-direction: column; gap: 1rem; }
+    .aside-card {
+      background: var(--warm-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+    }
+    .aside-card-title { font-size: .78rem; font-family: var(--ff-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .4rem; }
+    .aside-card-body { font-size: .875rem; color: var(--muted); }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-text p { color: var(--muted); margin-bottom: 1rem; font-size: .95rem; line-height: 1.85; }
+    .about-text p strong { color: var(--cream); font-weight: 400; }
+    .about-img {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .about-img::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, rgba(13,11,8,.8));
+      z-index: 1;
+    }
+    .about-img img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; }
+    .about-img-caption {
+      position: absolute;
+      bottom: 1.2rem;
+      left: 1.2rem;
+      z-index: 2;
+      font-family: var(--ff-mono);
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(240,232,213,.6);
+    }
+
+    /* ─── EPK ─── */
+    .epk-cards {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1px;
+      margin-top: 3rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .epk-card {
+      background: var(--warm-1);
+      padding: 2rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      transition: background .2s;
+      position: relative;
+    }
+    .epk-card:hover { background: var(--warm-2); }
+    .epk-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+    .epk-name { font-size: 1rem; font-weight: 500; color: var(--cream); }
+    .epk-desc { font-size: .85rem; color: var(--muted); }
+    .epk-arrow {
+      margin-top: auto;
+      padding-top: 1rem;
+      font-family: var(--ff-mono);
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: gap .2s;
+    }
+    .epk-card:hover .epk-arrow { gap: .7rem; }
+
+    /* ─── CONNECT ─── */
+    .connect-bar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 2.5rem 3rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--warm-1);
+    }
+    .connect-title { font-family: var(--ff-display); font-size: 1.5rem; font-style: italic; color: var(--cream); }
+    .connect-sub { font-size: .875rem; color: var(--muted); margin-top: .25rem; }
+    .social-links { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .social-link {
+      font-family: var(--ff-mono);
+      font-size: .66rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      padding: .55rem .9rem;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      transition: color .2s, border-color .2s;
+    }
+    .social-link:hover { color: var(--gold); border-color: var(--gold); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 4rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo { font-family: var(--ff-display); font-size: 1.6rem; font-weight: 900; font-style: italic; color: var(--cream); margin-bottom: 1rem; }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline { font-size: .875rem; color: var(--muted); line-height: 1.75; }
+    .footer-col-title { font-family: var(--ff-mono); font-size: .66rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+    .footer-links a { font-size: .875rem; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--ff-mono);
+      font-size: .68rem;
+      letter-spacing: .08em;
+      color: var(--muted);
+    }
+
+    /* ─── DIVIDER ─── */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--border);
+      margin: 0 auto;
+      max-width: 200px;
+    }
+    .ornament::before, .ornament::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .ornament-icon { color: var(--gold); font-size: .8rem; opacity: .6; }
+
+    /* ─── ANIMATIONS ─── */
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.animate-ready {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    .reveal.animate-ready.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 7rem 1.5rem 2rem; }
+      .hero-right { padding: 0 1.5rem 4rem; }
+      .embed-shell { max-width: 100%; }
+      .tracks-grid { grid-template-columns: 1fr; }
+      .album-wrap { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr; }
+      .commission-grid { grid-template-columns: 1fr; }
+      .field-group, .three-col { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .epk-cards { grid-template-columns: 1fr; }
+      .connect-bar { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .commissions-section::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2.6rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: .75rem; text-align: center; }
+    }
+  </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500/30">
-  <!-- Top Notice / Sticky CTA -->
-  <div id="topbar" class="fixed inset-x-0 top-0 z-50 hidden md:block">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="mt-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur flex items-center justify-between px-4 py-2 text-sm">
-        <span>🎧 Join <span class="font-semibold">1,281,384+</span> listeners — Cebuano music that travels.</span>
-        <div class="flex gap-2">
-          <a href="#listen" class="focus-ring rounded-xl bg-white/10 px-3 py-1.5 hover:bg-white/20">Play Now</a>
-          <a href="#commissions" class="focus-ring rounded-xl bg-brand-500 px-3 py-1.5 font-medium text-slate-900 hover:bg-brand-400">Commission a Song</a>
-        </div>
-      </div>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T97XSWV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo">Zel<span>han</span></a>
+  <ul class="nav-links">
+    <li><a href="#listen">Music</a></li>
+    <li><a href="#commissions">Commissions</a></li>
+    <li><a href="#epk">EPK</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="nav-cta" href="#commissions">Commission a Song</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#listen" class="mobile-link">Music</a>
+  <a href="#commissions" class="mobile-link">Commissions</a>
+  <a href="#epk" class="mobile-link">EPK</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#commissions" style="color:var(--gold);" class="mobile-link">Commission a Song ↗</a>
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">Cebuano · Visayas, PH · 59.5M+ Streams</div>
+    <h1 class="hero-title">
+      Music that<br>
+      <em>feels like home.</em>
+    </h1>
+    <p class="hero-sub">
+      <strong>Zelhan</strong> weaves Visayan stories into modern pop. Viral hooks, heartfelt ballads —
+      and custom songs crafted for your most meaningful moments.
+    </p>
+    <div class="hero-stat">
+      <span class="hero-stat-num">59.5M+</span>
+      <span class="hero-stat-label">Streams on Spotify</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener">
+        ▶ Play on Spotify
+      </a>
+      <a class="btn-outline" href="#commissions">Commission a Song</a>
     </div>
   </div>
 
-  <!-- Nav -->
-  <header class="relative z-40">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 pt-20 md:pt-24">
-      <a href="#" class="flex items-center gap-3">
-        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-500/20 ring-1 ring-brand-500/30">
-          🎵
-        </span>
-        <span class="text-lg font-semibold tracking-tight">Zelhan</span>
-      </a>
-      <button id="menuBtn" class="focus-ring inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 md:hidden">
-        Menu
-      </button>
-      <ul id="menu" class="hidden items-center gap-6 md:flex">
-        <li><a class="focus-ring hover:text-brand-300" href="#listen">Music</a></li>
-        <li><a class="focus-ring hover:text-brand-300" href="#commissions">Commissions</a></li>
-        <li><a class="focus-ring hover:text-brand-300" href="#epk">EPK</a></li>
-        <li><a class="focus-ring hover:text-brand-300" href="#contact">Contact</a></li>
-        <li><a class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-medium text-slate-900 hover:bg-brand-400" href="#commissions">Start a Commission</a></li>
-      </ul>
-    </nav>
-    <div id="mobileNav" class="mx-auto mt-3 hidden max-w-6xl px-4 md:hidden">
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur">
-        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#listen">Music</a>
-        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#commissions">Commissions</a>
-        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#epk">EPK</a>
-        <a class="block rounded-xl px-3 py-2 hover:bg-white/5" href="#contact">Contact</a>
+  <div class="hero-right">
+    <div class="embed-shell">
+      <iframe
+        src="https://open.spotify.com/embed/artist/1HgCqz4lESpT3aAdTla5mi?utm_source=generator"
+        width="100%" height="352"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <!-- repeated twice for seamless loop -->
+    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta (Let's Eat) — 59,552,100 streams</span>
+    <span class="marquee-item"><span class="dot"></span> Busog Na — 2,816,425 streams</span>
+    <span class="marquee-item"><span class="dot"></span> Cebuano Pop · Alternative</span>
+    <span class="marquee-item"><span class="dot"></span> Custom Song Commissions Open</span>
+    <span class="marquee-item"><span class="dot"></span> Weddings · Brands · Birthdays</span>
+    <span class="marquee-item"><span class="dot"></span> Ikaw Ra · Langga · Pauli Na Ko</span>
+    <span class="marquee-item"><span class="dot"></span> Cebu, Philippines</span>
+    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta (Let's Eat) — 59,552,100 streams</span>
+    <span class="marquee-item"><span class="dot"></span> Busog Na — 2,816,425 streams</span>
+    <span class="marquee-item"><span class="dot"></span> Cebuano Pop · Alternative</span>
+    <span class="marquee-item"><span class="dot"></span> Custom Song Commissions Open</span>
+    <span class="marquee-item"><span class="dot"></span> Weddings · Brands · Birthdays</span>
+    <span class="marquee-item"><span class="dot"></span> Ikaw Ra · Langga · Pauli Na Ko</span>
+    <span class="marquee-item"><span class="dot"></span> Cebu, Philippines</span>
+  </div>
+</div>
+
+<!-- ══════════════ TRACKS ══════════════ -->
+<section class="section" id="listen">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Discography</div>
+      <h2 class="section-title">Top Tracks</h2>
+    </div>
+
+    <div class="tracks-grid reveal reveal-delay-1">
+      <div class="track-card" data-num="01">
+        <span class="track-badge">#1 Most Streamed</span>
+        <div class="track-name">Kaon Na Ta<br><em style="font-style:normal;font-size:.85rem;color:var(--muted);">(Let's Eat)</em></div>
+        <div class="track-streams">59,552,100</div>
+        <div class="track-desc">Spotify streams</div>
+        <a class="track-link" href="https://youtu.be/X3VR8pH_qhY?si=alf0D69m2xDZnyDG" target="_blank" rel="noopener">Watch on YouTube →</a>
+      </div>
+      <div class="track-card" data-num="02">
+        <span class="track-badge">Fan Favorite</span>
+        <div class="track-name">Busog Na</div>
+        <div class="track-streams">2,816,425</div>
+        <div class="track-desc">Spotify streams</div>
+        <a class="track-link" href="https://youtu.be/2QmOqbb0vwI?si=TyosVQxO8TcHRGOc" target="_blank" rel="noopener">Watch on YouTube →</a>
+      </div>
+      <div class="track-card" data-num="03">
+        <span class="track-badge">The Beginning</span>
+        <div class="track-name">Ikaw Ra</div>
+        <div class="track-streams" style="font-size:1.6rem;">Legacy Track</div>
+        <div class="track-desc">The song that started it all</div>
+        <a class="track-link" href="https://youtu.be/Er-Wj-Zmq_g?si=ClzKiPsDUQrV_okV" target="_blank" rel="noopener">Watch on YouTube →</a>
       </div>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-700/20 via-slate-900 to-slate-950"></div>
-      <div class="pointer-events-none absolute -inset-x-20 -top-40 h-[32rem] rounded-[4rem] bg-brand-500/10 blur-3xl"></div>
-    </div>
-
-    <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pb-12 pt-10 md:grid-cols-2 md:pb-20">
-      <div>
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
-          <span class="inline-flex h-2 w-2 rounded-full bg-brand-400"></span>
-          Over <span class="font-semibold text-white">1.28M</span> streams on Spotify
+    <!-- Latest Album -->
+    <div class="album-wrap reveal">
+      <div class="album-info">
+        <div class="album-info-label">Latest Release</div>
+        <div class="album-title">Newest<br>Single Album</div>
+        <p class="album-desc">Stream Zelhan's most recent release — fresh Cebuano storytelling wrapped in contemporary production.</p>
+        <div style="margin-top:1.5rem;">
+          <a class="btn-primary" href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" style="width:fit-content;">Open on Spotify</a>
         </div>
-        <h1 class="text-4xl font-black tracking-tight sm:text-5xl">
-          Visayan Pop & Alternative — <span class="text-brand-300">Zelhan</span>
-        </h1>
-        <p class="mt-4 text-slate-300">
-          Cebuano storytelling meets modern pop. From viral hooks like <em>Kaon Na Ta (Let’s Eat)</em> to heartfelt ballads,
-          Zelhan crafts songs for fans—and custom songs for your moments.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 text-base font-semibold text-slate-900 shadow-elev hover:bg-brand-400">Play on Spotify</a>
-          <a href="#commissions" class="focus-ring rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-base font-semibold hover:bg-white/10">Commission a Song</a>
-        </div>
-        <div class="mt-6 text-sm text-slate-400">As heard online and FB reels • Cebu, PH</div>
       </div>
-
-      <!-- Spotify embed (lazy) -->
-      <div class="relative">
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-elev backdrop-blur">
-          <iframe 
-            data-testid="embed-iframe" 
-            style="border-radius:12px" 
-            src="https://open.spotify.com/embed/artist/1HgCqz4lESpT3aAdTla5mi?utm_source=generator" 
-            width="100%" 
-            height="352" 
-            frameBorder="0" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-          </iframe>
-        </div>
-        <p class="mt-3 text-xs text-slate-400">Tip: turn on captions for lyrics.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Social Proof / Stream Stats -->
-  <section id="listen" class="mx-auto max-w-6xl px-4 pb-16">
-    <div class="mb-6 flex items-end justify-between">
-      <h2 class="text-2xl font-bold tracking-tight">Top Tracks</h2>
-      <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" class="text-sm text-brand-300 hover:underline">Open Artist Page →</a>
-    </div>
-
-    <!-- Stats cards -->
-    <div class="grid gap-6 md:grid-cols-3">
-      <!-- Kaon Na Ta -->
-      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-        <div class="flex items-start justify-between">
-          <h3 class="text-lg font-semibold">Kaon Na Ta (Let’s Eat)</h3>
-          <span class="rounded-full bg-brand-500/20 px-2 py-1 text-xs text-brand-200 ring-1 ring-brand-500/30">#1</span>
-        </div>
-        <p class="mt-2 text-sm text-slate-300">Most streamed</p>
-        <p class="mt-4 text-3xl font-extrabold tracking-tight">1,281,384</p>
-        <a href="https://youtu.be/X3VR8pH_qhY?si=alf0D69m2xDZnyDG" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-brand-500 px-4 py-2 font-medium text-slate-900 hover:bg-brand-400">Watch on YouTube</a>
-      </article>
-
-      <!-- Busog Na -->
-      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-        <h3 class="text-lg font-semibold">Busog Na</h3>
-        <p class="mt-2 text-sm text-slate-300">Fan favorite</p>
-        <p class="mt-4 text-3xl font-extrabold tracking-tight">285,473</p>
-        <a href="https://youtu.be/2QmOqbb0vwI?si=TyosVQxO8TcHRGOc" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-white/10 px-4 py-2 font-medium hover:bg-white/20">Watch on YouTube</a>
-      </article>
-
-      <!-- Ikaw Ra -->
-      <article class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-        <h3 class="text-lg font-semibold">Ikaw Ra</h3>
-        <p class="mt-2 text-sm text-slate-300">The song that started it all</p>
-        <p class="mt-4 text-3xl font-extrabold tracking-tight">Legacy</p>
-        <a href="https://youtu.be/Er-Wj-Zmq_g?si=ClzKiPsDUQrV_okV" target="_blank" rel="noopener" class="mt-5 inline-flex items-center justify-center rounded-xl bg-white/10 px-4 py-2 font-medium hover:bg-white/20">Watch on YouTube</a>
-      </article>
-    </div>
-
-    <!-- Latest Album: Ketchup -->
-    <div class="mt-10">
-      <div class="mb-6">
-        <h3 class="text-xl font-bold tracking-tight">Latest Release</h3>
-        <p class="mt-1 text-slate-300">Listen to Zelhan's newest single album</p>
-      </div>
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-2 shadow-elev backdrop-blur">
-        <iframe 
-          data-testid="embed-iframe" 
-          style="border-radius:12px" 
-          src="https://open.spotify.com/embed/album/71vAI9GkNCGA3mIKlpUmJC?utm_source=generator" 
-          width="100%" 
-          height="352" 
-          frameBorder="0" 
-          allowfullscreen="" 
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      <div class="album-embed">
+        <iframe
+          src="https://open.spotify.com/embed/album/71vAI9GkNCGA3mIKlpUmJC?utm_source=generator"
+          width="100%" height="352"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy">
         </iframe>
       </div>
     </div>
 
-    <!-- Stream table + image proof -->
-    <div class="mt-10 grid items-start gap-8 md:grid-cols-2">
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-        <h3 class="text-lg font-semibold">Latest Stream Snapshot</h3>
-        <p class="mt-1 text-sm text-slate-400">Updated Aug 16, 2025</p>
-        <div class="mt-4 overflow-x-auto">
-          <table class="min-w-full text-sm">
-            <thead class="text-left text-slate-400">
-              <tr>
-                <th class="pb-2 pr-4">Track</th>
-                <th class="pb-2 pr-4">Downloads</th>
-                <th class="pb-2">Streams</th>
-              </tr>
-            </thead>
-            <tbody class="[&_tr:not(:last-child)]:border-b [&_tr:not(:last-child)]:border-white/10">
-              <tr><td class="py-3 pr-4">Kaon Na Ta (Let’s Eat)</td><td class="py-3 pr-4">1</td><td class="py-3">1,281,384</td></tr>
-              <tr><td class="py-3 pr-4">Busog Na</td><td class="py-3 pr-4">0</td><td class="py-3">285,473</td></tr>
-              <tr><td class="py-3 pr-4">Di Ka Biyaan</td><td class="py-3 pr-4">0</td><td class="py-3">2,961</td></tr>
-              <tr><td class="py-3 pr-4">Langga</td><td class="py-3 pr-4">0</td><td class="py-3">3,704</td></tr>
-              <tr><td class="py-3 pr-4">Pauli Na Ko</td><td class="py-3 pr-4">0</td><td class="py-3">2,199</td></tr>
-              <tr><td class="py-3 pr-4">Salamat sa Tanan</td><td class="py-3 pr-4">0</td><td class="py-3">3,055</td></tr>
-            </tbody>
-          </table>
+    <!-- Stats -->
+    <div class="stats-row reveal">
+      <div class="table-shell">
+        <div class="table-head">Stream Snapshot · Latest Data</div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Track</th>
+              <th>Streams</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kaon Na Ta (Let's Eat)</td><td class="td-streams">59,552,100</td></tr>
+            <tr><td>Busog Na</td><td class="td-streams">2,816,425</td></tr>
+            <tr><td>Pauli Na Ko</td><td class="td-streams">143,661</td></tr>
+            <tr><td>Larga ta</td><td class="td-streams">123,727</td></tr>
+            <tr><td>Rewind the Time</td><td class="td-streams">141,084</td></tr>
+            <tr><td>Larga Ta</td><td class="td-streams">57,141</td></tr>
+            <tr><td>Salamat sa Tanan</td><td class="td-streams">56,671</td></tr>
+            <tr><td>Sa Damgo</td><td class="td-streams">26,054</td></tr>
+            <tr><td>Di Ka Biyaan</td><td class="td-streams">25,760</td></tr>
+            <tr><td>It Must End This Way</td><td class="td-streams">37,307</td></tr>
+            <tr><td>Langga</td><td class="td-streams">5,682</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="proof-img">
+        <img src="https://i.ibb.co/hxnTDPDz/Screenshot-2025-08-16-013024.jpg" alt="Stream dashboard screenshot showing Kaon Na Ta at 59,552,100 streams">
+        <div class="proof-caption">Source: internal stream dashboard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ COMMISSIONS ══════════════ -->
+<section class="section commissions-section" id="commissions">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Custom Song</div>
+      <h2 class="section-title">Make Your Story<br>the Next Hit.</h2>
+      <p style="margin-top:1rem;color:var(--muted);font-size:.95rem;max-width:48ch;line-height:1.8;">Perfect for weddings, anniversaries, proposals, brand jingles, and creator intros. Avg turnaround: 10–21 days. 50% deposit. Includes one revision.</p>
+    </div>
+
+    <div class="commission-grid" style="margin-top:3rem;">
+      <!-- Form -->
+      <form action="https://formsubmit.co/f19a290fbfe81ae9bb1a3aa909f1741d" method="POST" class="comm-form reveal">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Custom Song Quote">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="field-group">
+          <label class="field">
+            <span class="field-label">Your Name</span>
+            <input required name="name" type="text" placeholder="Juan Dela Cruz" autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field-label">Email</span>
+            <input required name="email" type="email" placeholder="you@email.com" autocomplete="email">
+          </label>
         </div>
-      </div>
-      <figure class="rounded-3xl border border-white/10 bg-white/5 p-3 shadow-elev backdrop-blur">
-        <img
-          src="https://i.ibb.co/hxnTDPDz/Screenshot-2025-08-16-013024.jpg"
-          alt="Latest Zelhan stream data screenshot (Kaon Na Ta 1,281,384 streams)"
-          class="rounded-2xl">
-        <figcaption class="mt-2 px-1 text-xs text-slate-400">Data: internal stream dashboard</figcaption>
-      </figure>
-    </div>
-  </section>
 
-  <!-- Commissions -->
-  <section id="commissions" class="relative">
-    <div class="absolute inset-0 -z-10">
-      <div class="h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-800/20 via-slate-900 to-slate-950"></div>
-    </div>
+        <div class="field-group">
+          <label class="field">
+            <span class="field-label">Occasion</span>
+            <select name="occasion">
+              <option>Wedding</option>
+              <option>Anniversary</option>
+              <option>Birthday</option>
+              <option>Brand / Jingle</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Language</span>
+            <select name="language">
+              <option>Cebuano</option>
+              <option>English</option>
+              <option>Bisaya-English Mix</option>
+            </select>
+          </label>
+        </div>
 
-    <div class="mx-auto max-w-6xl px-4 py-16">
-      <div class="mb-8 max-w-2xl">
-        <h2 class="text-3xl font-black tracking-tight">Commission a Custom Song</h2>
-        <p class="mt-3 text-slate-300">
-          Make your story the next hit. Perfect for weddings, anniversaries, proposals, brand jingles, or creator intros.
-          Avg turnaround: 10–21 days • 50% deposit • Includes 1 revision.
-        </p>
-      </div>
+        <label class="field">
+          <span class="field-label">Story / Details</span>
+          <textarea name="story" rows="4" placeholder="Names, fun memories, brand message — what should the song say?"></textarea>
+        </label>
 
-      <div class="grid gap-8 md:grid-cols-[1.2fr_.8fr]">
-        <!-- Form -->
-       <form action="https://formsubmit.co/f19a290fbfe81ae9bb1a3aa909f1741d" method="POST" class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-            <!-- FormSubmit helpers -->
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_subject" value="New Custom Song Quote">
-            <input type="hidden" name="_captcha" value="false">
-          
-            <div class="grid gap-4 md:grid-cols-2">
-              <label class="block">
-                <span class="mb-1 block text-sm">Your Name</span>
-                <input required name="name" type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="Juan Dela Cruz" autocomplete="name">
-              </label>
-          
-              <label class="block">
-                <span class="mb-1 block text-sm">Email</span>
-                <input required name="email" type="email" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="you@email.com" autocomplete="email">
-              </label>
-          
-              <label class="block">
-                <span class="mb-1 block text-sm">Occasion</span>
-                <select name="occasion" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                  <option value="Wedding">Wedding</option>
-                  <option value="Anniversary">Anniversary</option>
-                  <option value="Birthday">Birthday</option>
-                  <option value="Brand/Jingle">Brand/Jingle</option>
-                  <option value="Other">Other</option>
-                </select>
-              </label>
-          
-              <label class="block">
-                <span class="mb-1 block text-sm">Language</span>
-                <select name="language" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                  <option value="Cebuano">Cebuano</option>
-                  <option value="English">English</option>
-                  <option value="Bisaya-English Mix">Bisaya-English Mix</option>
-                </select>
-              </label>
-          
-              <label class="md:col-span-2 block">
-                <span class="mb-1 block text-sm">Story / Details</span>
-                <textarea name="story" rows="4" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2 placeholder:text-slate-500" placeholder="What should the song say? Names, fun memories, brand message..."></textarea>
-              </label>
-          
-              <div class="grid gap-4 md:grid-cols-3 md:col-span-2">
-                <label class="block">
-                  <span class="mb-1 block text-sm">Package</span>
-                  <select name="package" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                    <option value="Demo">Demo</option>
-                    <option value="Studio">Studio</option>
-                    <option value="Studio + Lyric Video">Studio + Lyric Video</option>
-                  </select>
-                </label>
-          
-                <label class="block">
-                  <span class="mb-1 block text-sm">Deadline</span>
-                  <input name="deadline" type="date" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2">
-                </label>
-          
-                <label class="block">
-                  <span class="mb-1 block text-sm">Budget (USD)</span>
-                  <input name="budget" type="text" class="focus-ring w-full rounded-xl border border-white/10 bg-slate-900/60 px-3 py-2" placeholder="$300–$1500" inputmode="decimal">
-                </label>
-              </div>
-            </div>
-          
-            <div class="mt-6 flex items-center justify-between">
-              <p class="text-xs text-slate-400">We’ll reply within 24 hours. Your info stays private.</p>
-              <button type="submit" class="focus-ring rounded-2xl bg-brand-500 px-5 py-3 font-semibold text-slate-900 hover:bg-brand-400">Get a Quote</button>
-            </div>
-          </form>
+        <div class="three-col">
+          <label class="field">
+            <span class="field-label">Package</span>
+            <select name="package">
+              <option>Demo</option>
+              <option>Studio</option>
+              <option>Studio + Lyric Video</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Deadline</span>
+            <input name="deadline" type="date">
+          </label>
+          <label class="field">
+            <span class="field-label">Budget (USD)</span>
+            <input name="budget" type="text" placeholder="$300–$1500" inputmode="decimal">
+          </label>
+        </div>
 
+        <div class="form-footer">
+          <p class="form-note">We'll reply within 24 hours. Your info stays private.</p>
+          <button type="submit" class="btn-primary">Get a Quote ↗</button>
+        </div>
+      </form>
 
-        <!-- Selling points -->
-        <div class="grid gap-4">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h4 class="font-semibold">Why commission from Zelhan?</h4>
-            <ul class="mt-3 space-y-2 text-sm text-slate-300">
-              <li>• Cebuano lyrics that resonate, with pop hooks that stick</li>
-              <li>• Clear creative process & one included revision</li>
-              <li>• Commercial licensing options for brands & creators</li>
-              <li>• 1.28M+ total streams as proof of audience appeal</li>
-            </ul>
+      <!-- Aside -->
+      <div class="comm-aside reveal reveal-delay-2">
+        <div class="aside-intro">Songs crafted for <span>your</span> most memorable moments.</div>
+        <ul class="aside-list">
+          <li>Cebuano lyrics with pop hooks that stick — proven by 59.5M+ streams</li>
+          <li>Clear creative process with one included revision</li>
+          <li>Commercial licensing for brands & creators</li>
+          <li>Personal, studio, and lyric-video packages available</li>
+          <li>Turnaround 10–21 days with 50% deposit</li>
+        </ul>
+        <div class="aside-cards">
+          <div class="aside-card">
+            <div class="aside-card-title">Licensing Options</div>
+            <div class="aside-card-body">Personal · Creator (YouTube/TikTok) · Commercial (Brand/Jingle). Ask for rates and usage terms.</div>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h4 class="font-semibold">Licensing</h4>
-            <p class="mt-2 text-sm text-slate-300">Personal • Creator (YouTube/TikTok) • Commercial (Brand/Jingle). Ask for rates and usage terms.</p>
+          <div class="aside-card">
+            <div class="aside-card-title">What you receive</div>
+            <div class="aside-card-body">WAV master, lyrics sheet, and commercial license for your chosen tier.</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About -->
-  <section class="mx-auto max-w-6xl px-4 py-16">
-    <div class="grid items-center gap-10 md:grid-cols-2">
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Visayan Stories.<br>Global Ears.</h2>
+        <p>Zelhan is a Cebuano singer-songwriter blending the warmth of Visayan storytelling with contemporary alternative pop. He creates music that travels — from intimate ballads sung in Bisaya to viral hooks that resonate far beyond the islands.</p>
+        <p>His breakout single <strong>"Ikaw Ra"</strong> introduced his modern Bisaya sound. It was followed by heartfelt releases including <strong>"Pauli Na Ko"</strong>, <strong>"Langga,"</strong> and the phenomenon that became <strong>"Kaon Na Ta (Let's Eat)"</strong> — now past 1.28 million streams.</p>
+        <p>Today, Zelhan writes custom songs for weddings, brands, and life's defining moments — bringing Cebuano culture to global ears, one story at a time.</p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem;">
+          <a class="btn-primary" href="/cdn-cgi/l/email-protection#8eece1e1e5e7e0e9cef4ebe2e6efe0a0ede1e3">Book a Performance</a>
+          <a class="btn-outline" href="#epk">View EPK</a>
+        </div>
+      </div>
+      <div class="about-img reveal reveal-delay-1">
+        <img src="https://i.ibb.co/s9HyDV2V/press-photo-zelhan.png" alt="Zelhan press photo">
+        <div class="about-img-caption">Zelhan · Cebu, Philippines</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ EPK ══════════════ -->
+<section class="section" id="epk" style="background:var(--warm-1);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Press</div>
+      <h2 class="section-title">Electronic Press Kit</h2>
+    </div>
+
+    <div class="epk-cards reveal reveal-delay-1">
+      <a class="epk-card" href="https://zelhan.com/press/Zelhan-EPK.pdf">
+        <div class="epk-icon">📄</div>
+        <div class="epk-name">Download EPK (PDF)</div>
+        <div class="epk-desc">Bio, stream highlights, tech rider, and booking contact in one document.</div>
+        <div class="epk-arrow">Download <span>→</span></div>
+      </a>
+      <a class="epk-card" href="https://zelhan.com/press/press-photos.zip">
+        <div class="epk-icon">🖼️</div>
+        <div class="epk-name">Press Photos</div>
+        <div class="epk-desc">Hi-resolution images cleared for editorial and promotional use.</div>
+        <div class="epk-arrow">Download ZIP <span>→</span></div>
+      </a>
+      <a class="epk-card" href="/cdn-cgi/l/email-protection#1f7d7070747671785f657a73777e71317c7072">
+        <div class="epk-icon">✉️</div>
+        <div class="epk-name">Booking & Media</div>
+        <div class="epk-desc">For show bookings, media requests, and licensing inquiries.</div>
+        <div class="epk-arrow"><span class="__cf_email__" data-cfemail="2d4f42424644434a6d574841454c43034e4240">[email&#160;protected]</span> <span>→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONNECT ══════════════ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="connect-bar reveal">
       <div>
-        <h2 class="text-3xl font-black tracking-tight">About Zelhan</h2>
-        <p class="mt-4 text-slate-300">
-          Zelhan is a Cebuano singer-songwriter blending Visayan storytelling with alternative pop.
-          His breakout single <strong>“Ikaw Ra”</strong> introduced his modern Bisaya sound, followed by heartfelt releases like
-          <strong>“Pauli Na Ko”</strong> and <strong>“Langga.”</strong> Today he writes custom songs for weddings, brands, and life moments—bringing Cebuano culture to global ears.
-        </p>
-        <div class="mt-6 flex gap-3">
-          <a href="#epk" class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10">View EPK</a>
-          <a href="mailto:hello@zelhan.com" class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-semibold text-slate-900 hover:bg-brand-400">Book a Performance</a>
-        </div>
+        <div class="connect-title">Follow Zelhan</div>
+        <div class="connect-sub">New releases, behind-the-song posts, and show dates.</div>
       </div>
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-3 shadow-elev backdrop-blur">
-        <img src="https://zelhan.com/press-photo.jpg" alt="Zelhan press photo" class="rounded-2xl">
+      <div class="social-links">
+        <a class="social-link" href="https://web.facebook.com/zelhantv" target="_blank" rel="noopener">Facebook</a>
+        <a class="social-link" href="https://instagram.com/zelhan" target="_blank" rel="noopener">Instagram</a>
+        <a class="social-link" href="https://x.com/zelhantv" target="_blank" rel="noopener">X</a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA" target="_blank" rel="noopener">YouTube</a>
+        <a class="social-link" href="https://zelhantv.com" target="_blank" rel="noopener">Blog</a>
+        <a class="btn-primary" href="#commissions" style="font-size:.72rem;padding:.5rem 1rem;">Commission ↗</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- EPK -->
-  <section id="epk" class="relative">
-    <div class="absolute inset-0 -z-10">
-      <div class="h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-900/10 via-slate-900 to-slate-950"></div>
-    </div>
-    <div class="mx-auto max-w-6xl px-4 py-16">
-      <h2 class="text-3xl font-black tracking-tight">EPK – Electronic Press Kit</h2>
-      <div class="mt-8 grid gap-6 md:grid-cols-3">
-        <a href="https://zelhan.com/press/Zelhan-EPK.pdf" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
-          <h3 class="font-semibold">Download EPK (PDF)</h3>
-          <p class="mt-1 text-sm text-slate-300">Bio, highlights, contact</p>
-          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Download →</span>
-        </a>
-        <a href="https://zelhan.com/press/press-photos.zip" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
-          <h3 class="font-semibold">Press Photos</h3>
-          <p class="mt-1 text-sm text-slate-300">Hi-res images</p>
-          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Download →</span>
-        </a>
-        <a href="mailto:booking@zelhan.com" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10">
-          <h3 class="font-semibold">Booking & Media</h3>
-          <p class="mt-1 text-sm text-slate-300">booking@zelhan.com</p>
-          <span class="mt-3 inline-block text-brand-300 group-hover:underline">Email →</span>
-        </a>
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Zel<span>han</span></div>
+        <p class="footer-tagline">Cebuano singer-songwriter blending Visayan storytelling with modern pop. From viral hits to heartfelt ballads — Zelhan crafts songs that travel.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="#listen">Music</a></li>
+          <li><a href="#commissions">Commissions</a></li>
+          <li><a href="#epk">EPK</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Listen</div>
+        <ul class="footer-links">
+          <li><a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Other Pages</div>
+        <ul class="footer-links">
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="commission/index.html">Commission</a></li>
+          <li><a href="contact/index.html">Contact</a></li>
+          <li><a href="music/index.html">Music</a></li>
+          <li><a href="previous-albums/index.html">Previous Albums</a></li>
+          <li><a href="songwriting-course-book/index.html">Songwriting Course</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Connect -->
-  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
-    <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-elev backdrop-blur">
-      <div class="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
-        <div>
-          <h3 class="text-xl font-bold tracking-tight">Connect with Zelhan</h3>
-          <p class="mt-1 text-slate-300">Follow for new releases, behind-the-song, and show dates.</p>
-        </div>
-        <div class="flex flex-wrap gap-3">
-          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://web.facebook.com/zelhantv">Facebook</a>
-          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://instagram.com/zelhan">Instagram</a>
-          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://x.com/zelhantv">X (Twitter)</a>
-          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA">YouTube</a>
-          <a class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10" href="https://zelhantv.com">Blog</a>
-          <a class="focus-ring rounded-xl bg-brand-500 px-4 py-2 font-semibold text-slate-900 hover:bg-brand-400" href="#commissions">Start a Commission</a>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Zelhan. All rights reserved.</span>
+      <span>Cebu, Philippines · Cebuano Music for the World</span>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-4 py-16">
-      <!-- Main Footer Content -->
-      <div class="grid gap-8 md:grid-cols-4">
-        <!-- Brand & Description -->
-        <div class="md:col-span-2">
-          <div class="flex items-center gap-3 mb-4">
-            <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-500/20 ring-1 ring-brand-500/30">
-              🎵
-            </span>
-            <span class="text-lg font-semibold tracking-tight">Zelhan</span>
-          </div>
-          <p class="text-slate-300 mb-4">Cebuano singer-songwriter blending Visayan storytelling with modern pop. From viral hits to heartfelt ballads, Zelhan crafts songs that travel.</p>
-          <div class="flex gap-3">
-            <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="hover:text-brand-300">
-              <span class="sr-only">Spotify</span>
-              🎧
-            </a>
-            <a href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA" target="_blank" rel="noopener" class="hover:text-brand-300">
-              <span class="sr-only">YouTube</span>
-              ▶️
-            </a>
-            <a href="https://instagram.com/zelhan" target="_blank" rel="noopener" class="hover:text-brand-300">
-              <span class="sr-only">Instagram</span>
-              📸
-            </a>
-          </div>
-        </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-        <!-- Quick Links -->
-        <div>
-          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#listen" class="hover:text-brand-300">Music</a></li>
-            <li><a href="#commissions" class="hover:text-brand-300">Commissions</a></li>
-            <li><a href="#epk" class="hover:text-brand-300">EPK</a></li>
-            <li><a href="#contact" class="hover:text-brand-300">Contact</a></li>
-          </ul>
-        </div>
+  // Nav scroll state
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
 
-                 <!-- Other Pages -->
-         <div>
-           <h4 class="font-semibold text-white mb-4">Other Pages</h4>
-           <ul class="space-y-2 text-sm">
-                         <li><a href="about/index.html" class="hover:text-brand-300">About Page</a></li>
-            <li><a href="commission/index.html" class="hover:text-brand-300">Commission Page</a></li>
-            <li><a href="contact/index.html" class="hover:text-brand-300">Contact Page</a></li>
-            <li><a href="music/index.html" class="hover:text-brand-300">Music Page</a></li>
-            <li><a href="previous-albums/index.html" class="hover:text-brand-300">Previous Albums</a></li>
-            <li><a href="songwriting-course-book/index.html" class="hover:text-brand-300">Songwriting Course</a></li>
-            <li><a href="old-site/old-index.html" class="hover:text-brand-300">Old Site</a></li>
-           </ul>
-         </div>
-      </div>
-
-      <!-- Bottom Footer -->
-      <div class="mt-12 pt-8 border-t border-white/10">
-        <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-          <p>© <span id="year"></span> Zelhan. All rights reserved.</p>
-          <div class="flex gap-4 text-sm">
-            <a href="#epk" class="hover:text-brand-300">EPK</a>
-            <a href="mailto:hello@zelhan.com" class="hover:text-brand-300">Contact</a>
-            <a href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener" class="hover:text-brand-300">Spotify</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Minimal JS -->
-  <script>
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // mobile menu toggle
-    const btn = document.getElementById('menuBtn');
-    const mobile = document.getElementById('mobileNav');
-    const desktop = document.getElementById('menu');
-    btn?.addEventListener('click', () => mobile.classList.toggle('hidden'));
-
-    // show sticky topbar after scroll
-    const topbar = document.getElementById('topbar');
-    const revealAt = 180;
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > revealAt) topbar.classList.remove('hidden');
-      else topbar.classList.add('hidden');
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
     });
-  </script>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T97XSWV7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  });
+
+  // Reveal on scroll — add hidden class via JS so content visible without it
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => el.classList.add('animate-ready'));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
-
-
-
-
-
-
