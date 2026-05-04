@@ -11,29 +11,27 @@
   </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T97XSWV7');</script>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
-  <title>Zelhan – Visayan (Cebuano) Singer-Songwriter | Commissions & Spotify</title>
-  <meta name="description" content="Listen to Zelhan's Cebuano pop/alternative songs and commission a custom track for weddings, brands, and special moments. Stream on Spotify, book performances, view EPK." />
-  <meta property="og:title" content="Zelhan – Visayan (Cebuano) Singer-Songwriter" />
-  <meta property="og:description" content="Cebuano pop & alternative. Stream on Spotify or commission a custom song." />
+  <title>Zelhan – Composer & Producer | 68M+ Streams | Cebu, Philippines</title>
+  <meta name="description" content="Zelhan — Cebuano composer & producer with 68M+ streams. Available for co-writes, sync licensing, custom commissions, and song placements. Stream on Spotify." />
+  <meta property="og:title" content="Zelhan – Composer & Producer | 68M+ Streams" />
+  <meta property="og:description" content="The composition pulls people in. 68M+ streams composed from Cebu, Philippines." />
   <meta property="og:image" content="https://zelhan.com/og-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
     "name": "Zelhan",
-    "genre": ["Pop", "Alternative"],
+    "description": "Composer & producer with 68M+ streams. Available for co-writes, sync licensing, and custom song commissions.",
+    "genre": ["Pop", "Alternative", "Cebuano"],
     "inLanguage": ["ceb","en"],
     "url": "https://zelhan.com",
     "sameAs": [
@@ -46,16 +44,14 @@
     ],
     "offers": {
       "@type": "Offer",
-      "name": "Custom Song Commission",
+      "name": "Custom Song Commission & Co-Write",
       "availability": "https://schema.org/InStock",
       "url": "https://zelhan.com#commissions"
     }
   }
   </script>
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --ink:     #0d0b08;
       --paper:   #111009;
@@ -72,9 +68,7 @@
       --ff-body:    'DM Sans', sans-serif;
       --ff-mono:    'DM Mono', monospace;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--paper);
       color: var(--cream);
@@ -83,8 +77,6 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-
-    /* ─── GRAIN OVERLAY ─── */
     body::before {
       content: '';
       position: fixed;
@@ -95,17 +87,11 @@
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size: 200px;
     }
-
-    /* ─── SCROLLBAR ─── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--ink); }
     ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
-
-    /* ─── TYPOGRAPHY ─── */
     .display { font-family: var(--ff-display); }
     .mono    { font-family: var(--ff-mono); }
-
-    /* ─── FOCUS ─── */
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
 
     /* ─── NAV ─── */
@@ -136,7 +122,6 @@
       letter-spacing: -.01em;
     }
     .nav-logo span { color: var(--gold); }
-
     .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
     .nav-links a {
       font-size: .8rem;
@@ -159,7 +144,6 @@
       transition: background .2s !important;
     }
     .nav-cta:hover { background: var(--gold-lt) !important; }
-
     .hamburger {
       display: none;
       flex-direction: column;
@@ -178,7 +162,6 @@
     .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
     .mobile-nav {
       display: none;
       position: fixed;
@@ -273,29 +256,40 @@
       line-height: 1.75;
     }
     .hero-sub strong { color: var(--cream); font-weight: 400; }
+
+    /* Dual stat row */
+    .hero-stats {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
     .hero-stat {
       display: inline-flex;
-      align-items: baseline;
-      gap: .4rem;
-      margin-top: 2.5rem;
+      flex-direction: column;
       padding: 1rem 1.5rem;
       border: 1px solid var(--border);
       border-radius: 4px;
       background: rgba(201,151,58,.04);
+      flex: 1;
+      min-width: 140px;
     }
     .hero-stat-num {
       font-family: var(--ff-display);
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 700;
       color: var(--gold-lt);
+      line-height: 1.1;
     }
     .hero-stat-label {
       font-family: var(--ff-mono);
-      font-size: .7rem;
+      font-size: .65rem;
       letter-spacing: .1em;
       text-transform: uppercase;
       color: var(--muted);
+      margin-top: .25rem;
     }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
@@ -316,6 +310,8 @@
       padding: .85rem 1.8rem;
       border-radius: 2px;
       transition: background .2s, transform .15s;
+      border: none;
+      cursor: pointer;
     }
     .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
     .btn-outline {
@@ -335,7 +331,6 @@
       transition: border-color .2s, color .2s;
     }
     .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
     .hero-right {
       position: relative;
       z-index: 2;
@@ -369,6 +364,49 @@
       filter: blur(20px);
     }
     .embed-shell iframe { border-radius: 4px; display: block; }
+
+    /* ─── COMPOSER STRIP (new) ─── */
+    .composer-strip {
+      background: var(--warm-1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 0;
+    }
+    .composer-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5px;
+    }
+    .cs-item {
+      background: var(--warm-2);
+      padding: 1.5rem 2rem;
+      position: relative;
+    }
+    .cs-item:first-child { border-radius: 4px 0 0 4px; }
+    .cs-item:last-child  { border-radius: 0 4px 4px 0; }
+    .cs-label {
+      font-family: var(--ff-mono);
+      font-size: .62rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .5rem;
+    }
+    .cs-value {
+      font-family: var(--ff-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.2;
+    }
+    .cs-sub {
+      font-size: .8rem;
+      color: var(--muted);
+      margin-top: .2rem;
+    }
 
     /* ─── MARQUEE ─── */
     .marquee-strip {
@@ -409,7 +447,6 @@
     /* ─── SECTION COMMON ─── */
     .section { padding: 6rem 0; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-
     .section-label {
       display: inline-flex;
       align-items: center;
@@ -436,7 +473,68 @@
       letter-spacing: -.02em;
     }
 
-    /* ─── TRACKS SECTION ─── */
+    /* ─── COMPOSER SERVICES (new section) ─── */
+    .services-section {
+      background: var(--warm-1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 3rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--warm-2);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      transition: background .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: transform .3s;
+      transform-origin: left;
+    }
+    .service-card:hover { background: var(--warm-3); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon { font-size: 1.4rem; margin-bottom: .3rem; }
+    .service-name {
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.2;
+    }
+    .service-desc { font-size: .82rem; color: var(--muted); line-height: 1.65; }
+    .service-tag {
+      margin-top: auto;
+      padding-top: 1rem;
+      font-family: var(--ff-mono);
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: .25rem .6rem;
+      border-radius: 2px;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    /* ─── TRACKS ─── */
     .tracks-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -509,7 +607,6 @@
     }
     .track-link:hover { gap: .7rem; }
 
-    /* Latest album embed */
     .album-wrap {
       margin-top: 4rem;
       display: grid;
@@ -523,7 +620,6 @@
     .album-embed { border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
     .album-embed iframe { display: block; }
 
-    /* Stream table */
     .stats-row {
       margin-top: 4rem;
       display: grid;
@@ -564,7 +660,6 @@
     .data-table tr:last-child td { border-bottom: none; }
     .data-table tr:hover td { background: rgba(201,151,58,.04); }
     .td-streams { font-family: var(--ff-mono); color: var(--gold-lt); }
-
     .proof-img {
       background: var(--warm-1);
       border: 1px solid var(--border);
@@ -640,14 +735,12 @@
     .three-col { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
     .form-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; gap: 1rem; }
     .form-note { font-size: .78rem; color: var(--muted); max-width: 22ch; }
-
     .comm-aside { padding-top: .5rem; }
     .aside-intro { font-family: var(--ff-display); font-size: 1.8rem; font-style: italic; color: var(--cream); line-height: 1.25; margin-bottom: 2rem; }
     .aside-intro span { color: var(--gold); }
     .aside-list { list-style: none; display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2rem; }
     .aside-list li { display: flex; align-items: flex-start; gap: .8rem; font-size: .9rem; color: var(--muted); }
     .aside-list li::before { content: '↗'; color: var(--gold); flex-shrink: 0; font-size: .8rem; margin-top: .15rem; }
-
     .aside-cards { display: flex; flex-direction: column; gap: 1rem; }
     .aside-card {
       background: var(--warm-2);
@@ -732,6 +825,41 @@
     }
     .epk-card:hover .epk-arrow { gap: .7rem; }
 
+    /* ─── COLLAB CTA (new) ─── */
+    .collab-cta {
+      background: var(--warm-1);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 0;
+    }
+    .collab-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: center;
+    }
+    .collab-text-eyebrow {
+      font-family: var(--ff-mono);
+      font-size: .66rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .6rem;
+    }
+    .collab-text-title {
+      font-family: var(--ff-display);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 900;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.2;
+    }
+    .collab-text-sub { font-size: .9rem; color: var(--muted); margin-top: .5rem; max-width: 50ch; }
+    .collab-actions { display: flex; flex-direction: column; gap: .75rem; }
+
     /* ─── CONNECT ─── */
     .connect-bar {
       display: grid;
@@ -790,18 +918,6 @@
       color: var(--muted);
     }
 
-    /* ─── DIVIDER ─── */
-    .ornament {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      color: var(--border);
-      margin: 0 auto;
-      max-width: 200px;
-    }
-    .ornament::before, .ornament::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-    .ornament-icon { color: var(--gold); font-size: .8rem; opacity: .6; }
-
     /* ─── ANIMATIONS ─── */
     .reveal {
       opacity: 1;
@@ -823,6 +939,8 @@
       .hero-left { padding: 7rem 1.5rem 2rem; }
       .hero-right { padding: 0 1.5rem 4rem; }
       .embed-shell { max-width: 100%; }
+      .composer-strip-inner { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
       .tracks-grid { grid-template-columns: 1fr; }
       .album-wrap { grid-template-columns: 1fr; }
       .stats-row { grid-template-columns: 1fr; }
@@ -831,10 +949,17 @@
       .about-grid { grid-template-columns: 1fr; }
       .epk-cards { grid-template-columns: 1fr; }
       .connect-bar { grid-template-columns: 1fr; }
+      .collab-inner { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .commissions-section::before { display: none; }
+    }
+    @media (max-width: 600px) {
+      .composer-strip-inner { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; }
+      .hero-stat { min-width: unset; }
     }
     @media (max-width: 480px) {
       .hero-title { font-size: 2.6rem; }
@@ -843,7 +968,6 @@
     }
   </style>
 </head>
-
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T97XSWV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -853,10 +977,11 @@
   <a href="#" class="nav-logo">Zel<span>han</span></a>
   <ul class="nav-links">
     <li><a href="#listen">Music</a></li>
+    <li><a href="#services">Co-Write & Sync</a></li>
     <li><a href="#commissions">Commissions</a></li>
     <li><a href="#epk">EPK</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a class="nav-cta" href="#commissions">Commission a Song</a></li>
+    <li><a class="nav-cta" href="#commissions">Get a Quote</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
@@ -866,39 +991,45 @@
 <!-- Mobile Nav -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#listen" class="mobile-link">Music</a>
+  <a href="#services" class="mobile-link">Co-Write & Sync</a>
   <a href="#commissions" class="mobile-link">Commissions</a>
   <a href="#epk" class="mobile-link">EPK</a>
   <a href="#contact" class="mobile-link">Contact</a>
-  <a href="#commissions" style="color:var(--gold);" class="mobile-link">Commission a Song ↗</a>
+  <a href="#commissions" style="color:var(--gold);" class="mobile-link">Get a Quote ↗</a>
 </div>
 
 <!-- ══════════════ HERO ══════════════ -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-lines"></div>
-
   <div class="hero-left">
-    <div class="hero-eyebrow">Cebuano · Visayas, PH · 59.5M+ Streams</div>
+    <div class="hero-eyebrow">Composer & Producer · Cebu, PH · 68M+ Streams</div>
     <h1 class="hero-title">
-      Music that<br>
-      <em>feels like home.</em>
+      The melody<br>
+      <em>does the work.</em>
     </h1>
     <p class="hero-sub">
-      <strong>Zelhan</strong> weaves Visayan stories into modern pop. Viral hooks, heartfelt ballads —
-      and custom songs crafted for your most meaningful moments.
+      <strong>Zelhan</strong> is a Cebuano composer and producer whose compositions have amassed
+      68M+ streams — not because of performance, but because the songwriting pulls people in.
+      Available for co-writes, sync placements, and custom commissions.
     </p>
-    <div class="hero-stat">
-      <span class="hero-stat-num">59.5M+</span>
-      <span class="hero-stat-label">Streams on Spotify</span>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">59.5M+</span>
+        <span class="hero-stat-label">Spotify Streams</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">63M+</span>
+        <span class="hero-stat-label">Facebook Streams</span>
+      </div>
     </div>
     <div class="hero-actions">
       <a class="btn-primary" href="https://open.spotify.com/artist/1HgCqz4lESpT3aAdTla5mi?si=M7-G4jPFSHC2OzfM0Q3Cmg" target="_blank" rel="noopener">
-        ▶ Play on Spotify
+        ▶ Stream on Spotify
       </a>
-      <a class="btn-outline" href="#commissions">Commission a Song</a>
+      <a class="btn-outline" href="#services">Co-Write & Sync ↗</a>
     </div>
   </div>
-
   <div class="hero-right">
     <div class="embed-shell">
       <iframe
@@ -913,41 +1044,108 @@
   </div>
 </section>
 
+<!-- ══════════════ COMPOSER CREDENTIAL STRIP ══════════════ -->
+<div class="composer-strip">
+  <div class="composer-strip-inner">
+    <div class="cs-item">
+      <div class="cs-label">Total Reach</div>
+      <div class="cs-value">68M+</div>
+      <div class="cs-sub">Combined streams composed</div>
+    </div>
+    <div class="cs-item">
+      <div class="cs-label">Speciality</div>
+      <div class="cs-value">Cebuano Pop</div>
+      <div class="cs-sub">Alternative · Ballad · Hook-writing</div>
+    </div>
+    <div class="cs-item">
+      <div class="cs-label">Languages</div>
+      <div class="cs-value">Bisaya · EN</div>
+      <div class="cs-sub">Cebuano-English mix available</div>
+    </div>
+    <div class="cs-item">
+      <div class="cs-label">Available For</div>
+      <div class="cs-value">Co-Writes</div>
+      <div class="cs-sub">Sync · Commissions · Publishing</div>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════ MARQUEE ══════════════ -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <!-- repeated twice for seamless loop -->
-    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta (Let's Eat) — 59,552,100 streams</span>
-    <span class="marquee-item"><span class="dot"></span> Busog Na — 2,816,425 streams</span>
-    <span class="marquee-item"><span class="dot"></span> Cebuano Pop · Alternative</span>
-    <span class="marquee-item"><span class="dot"></span> Custom Song Commissions Open</span>
-    <span class="marquee-item"><span class="dot"></span> Weddings · Brands · Birthdays</span>
-    <span class="marquee-item"><span class="dot"></span> Ikaw Ra · Langga · Pauli Na Ko</span>
-    <span class="marquee-item"><span class="dot"></span> Cebu, Philippines</span>
-    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta (Let's Eat) — 59,552,100 streams</span>
-    <span class="marquee-item"><span class="dot"></span> Busog Na — 2,816,425 streams</span>
-    <span class="marquee-item"><span class="dot"></span> Cebuano Pop · Alternative</span>
-    <span class="marquee-item"><span class="dot"></span> Custom Song Commissions Open</span>
-    <span class="marquee-item"><span class="dot"></span> Weddings · Brands · Birthdays</span>
-    <span class="marquee-item"><span class="dot"></span> Ikaw Ra · Langga · Pauli Na Ko</span>
-    <span class="marquee-item"><span class="dot"></span> Cebu, Philippines</span>
+    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta — 59.5M Spotify Streams</span>
+    <span class="marquee-item"><span class="dot"></span> 63M+ Facebook Streams</span>
+    <span class="marquee-item"><span class="dot"></span> Co-Writes Open · DM to Collaborate</span>
+    <span class="marquee-item"><span class="dot"></span> Sync Licensing Available</span>
+    <span class="marquee-item"><span class="dot"></span> Custom Commissions · Weddings · Brands</span>
+    <span class="marquee-item"><span class="dot"></span> Cebuano Composer · Cebu, Philippines</span>
+    <span class="marquee-item"><span class="dot"></span> OPM · SEA · Diaspora · US / UK Indie</span>
+    <span class="marquee-item"><span class="dot"></span> Kaon Na Ta — 59.5M Spotify Streams</span>
+    <span class="marquee-item"><span class="dot"></span> 63M+ Facebook Streams</span>
+    <span class="marquee-item"><span class="dot"></span> Co-Writes Open · DM to Collaborate</span>
+    <span class="marquee-item"><span class="dot"></span> Sync Licensing Available</span>
+    <span class="marquee-item"><span class="dot"></span> Custom Commissions · Weddings · Brands</span>
+    <span class="marquee-item"><span class="dot"></span> Cebuano Composer · Cebu, Philippines</span>
+    <span class="marquee-item"><span class="dot"></span> OPM · SEA · Diaspora · US / UK Indie</span>
   </div>
 </div>
+
+<!-- ══════════════ COMPOSER SERVICES ══════════════ -->
+<section class="section services-section" id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Work With Zelhan</div>
+      <h2 class="section-title">Composer for Hire</h2>
+      <p style="margin-top:1rem;color:var(--muted);font-size:.95rem;max-width:52ch;line-height:1.8;">
+        Whether you're an artist, brand, film-maker, or creator — the writing is the product.
+        68M+ streams prove the compositions travel.
+      </p>
+    </div>
+    <div class="services-grid reveal reveal-delay-1">
+      <div class="service-card">
+        <div class="service-icon">🎼</div>
+        <div class="service-name">Co-Write Sessions</div>
+        <div class="service-desc">You bring the vision. Zelhan builds the melody, hooks, and structure around it. You perform it. You keep the spotlight — split publishing keeps it fair.</div>
+        <span class="service-tag">50/50 Split · Publishing</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎬</div>
+        <div class="service-name">Sync Licensing</div>
+        <div class="service-desc">Place Zelhan's compositions in films, ads, TV, and brand content. Apple Music & Amazon pay top sync rates. US/UK placements are the highest ROI.</div>
+        <span class="service-tag">Film · Ads · TV · Creators</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎵</div>
+        <div class="service-name">Custom Compositions</div>
+        <div class="service-desc">Brands, content creators, game studios, and life moments. Flat fee plus backend royalties. Cebuano, English, or bilingual — your brief, fully realized.</div>
+        <span class="service-tag">Flat Fee + Royalties</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📝</div>
+        <div class="service-name">Publishing Pipeline</div>
+        <div class="service-desc">Building toward a publishing deal. Once 3–5 co-write credits are in place, publishers negotiate and pitch your songs to bigger artists — royalties without lifting a finger.</div>
+        <span class="service-tag">Long-term · Passive Income</span>
+      </div>
+    </div>
+    <div style="margin-top:2rem;" class="reveal reveal-delay-2">
+      <a class="btn-primary" href="mailto:hello@zelhan.com">Enquire About a Collaboration ↗</a>
+    </div>
+  </div>
+</section>
 
 <!-- ══════════════ TRACKS ══════════════ -->
 <section class="section" id="listen">
   <div class="container">
     <div class="reveal">
       <div class="section-label">Discography</div>
-      <h2 class="section-title">Top Tracks</h2>
+      <h2 class="section-title">Composed Works</h2>
     </div>
-
     <div class="tracks-grid reveal reveal-delay-1">
       <div class="track-card" data-num="01">
         <span class="track-badge">#1 Most Streamed</span>
         <div class="track-name">Kaon Na Ta<br><em style="font-style:normal;font-size:.85rem;color:var(--muted);">(Let's Eat)</em></div>
         <div class="track-streams">59,552,100</div>
-        <div class="track-desc">Spotify streams</div>
+        <div class="track-desc">Spotify streams · composition-led viral hit</div>
         <a class="track-link" href="https://youtu.be/X3VR8pH_qhY?si=alf0D69m2xDZnyDG" target="_blank" rel="noopener">Watch on YouTube →</a>
       </div>
       <div class="track-card" data-num="02">
@@ -961,7 +1159,7 @@
         <span class="track-badge">The Beginning</span>
         <div class="track-name">Ikaw Ra</div>
         <div class="track-streams" style="font-size:1.6rem;">Legacy Track</div>
-        <div class="track-desc">The song that started it all</div>
+        <div class="track-desc">The composition that started it all</div>
         <a class="track-link" href="https://youtu.be/Er-Wj-Zmq_g?si=ClzKiPsDUQrV_okV" target="_blank" rel="noopener">Watch on YouTube →</a>
       </div>
     </div>
@@ -994,10 +1192,7 @@
         <div class="table-head">Stream Snapshot · Latest Data</div>
         <table class="data-table">
           <thead>
-            <tr>
-              <th>Track</th>
-              <th>Streams</th>
-            </tr>
+            <tr><th>Track</th><th>Streams</th></tr>
           </thead>
           <tbody>
             <tr><td>Kaon Na Ta (Let's Eat)</td><td class="td-streams">59,552,100</td></tr>
@@ -1022,22 +1217,38 @@
   </div>
 </section>
 
+<!-- ══════════════ COLLAB CTA (new) ══════════════ -->
+<div class="collab-cta">
+  <div class="collab-inner reveal">
+    <div>
+      <div class="collab-text-eyebrow">Open for collaboration</div>
+      <div class="collab-text-title">Looking to write with a vocalist<br>who wants a song built around them.</div>
+      <div class="collab-text-sub">OPM · P-pop · SEA indie · Diaspora acts · US / UK indie. Your voice. Zelhan's pen. Reach out with your demo or idea.</div>
+    </div>
+    <div class="collab-actions">
+      <a class="btn-primary" href="mailto:hello@zelhan.com">DM to Collaborate ↗</a>
+      <a class="btn-outline" href="https://soundbetter.com" target="_blank" rel="noopener">Find on SoundBetter</a>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════ COMMISSIONS ══════════════ -->
 <section class="section commissions-section" id="commissions">
   <div class="container">
     <div class="reveal">
       <div class="section-label">Custom Song</div>
       <h2 class="section-title">Make Your Story<br>the Next Hit.</h2>
-      <p style="margin-top:1rem;color:var(--muted);font-size:.95rem;max-width:48ch;line-height:1.8;">Perfect for weddings, anniversaries, proposals, brand jingles, and creator intros. Avg turnaround: 10–21 days. 50% deposit. Includes one revision.</p>
+      <p style="margin-top:1rem;color:var(--muted);font-size:.95rem;max-width:48ch;line-height:1.8;">
+        Perfect for weddings, anniversaries, proposals, brand jingles, and creator intros.
+        Avg turnaround: 10–21 days. 50% deposit. Includes one revision.
+      </p>
     </div>
-
     <div class="commission-grid" style="margin-top:3rem;">
       <!-- Form -->
       <form action="https://formsubmit.co/f19a290fbfe81ae9bb1a3aa909f1741d" method="POST" class="comm-form reveal">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="New Custom Song Quote">
         <input type="hidden" name="_captcha" value="false">
-
         <div class="field-group">
           <label class="field">
             <span class="field-label">Your Name</span>
@@ -1048,7 +1259,6 @@
             <input required name="email" type="email" placeholder="you@email.com" autocomplete="email">
           </label>
         </div>
-
         <div class="field-group">
           <label class="field">
             <span class="field-label">Occasion</span>
@@ -1057,6 +1267,8 @@
               <option>Anniversary</option>
               <option>Birthday</option>
               <option>Brand / Jingle</option>
+              <option>Co-Write</option>
+              <option>Sync License</option>
               <option>Other</option>
             </select>
           </label>
@@ -1069,12 +1281,10 @@
             </select>
           </label>
         </div>
-
         <label class="field">
           <span class="field-label">Story / Details</span>
           <textarea name="story" rows="4" placeholder="Names, fun memories, brand message — what should the song say?"></textarea>
         </label>
-
         <div class="three-col">
           <label class="field">
             <span class="field-label">Package</span>
@@ -1082,6 +1292,7 @@
               <option>Demo</option>
               <option>Studio</option>
               <option>Studio + Lyric Video</option>
+              <option>Co-Write Only</option>
             </select>
           </label>
           <label class="field">
@@ -1093,27 +1304,26 @@
             <input name="budget" type="text" placeholder="$300–$1500" inputmode="decimal">
           </label>
         </div>
-
         <div class="form-footer">
           <p class="form-note">We'll reply within 24 hours. Your info stays private.</p>
           <button type="submit" class="btn-primary">Get a Quote ↗</button>
         </div>
       </form>
-
       <!-- Aside -->
       <div class="comm-aside reveal reveal-delay-2">
         <div class="aside-intro">Songs crafted for <span>your</span> most memorable moments.</div>
         <ul class="aside-list">
-          <li>Cebuano lyrics with pop hooks that stick — proven by 59.5M+ streams</li>
+          <li>68M+ streams prove the compositions travel — not just locally</li>
+          <li>Cebuano lyrics with pop hooks that stick</li>
           <li>Clear creative process with one included revision</li>
           <li>Commercial licensing for brands & creators</li>
-          <li>Personal, studio, and lyric-video packages available</li>
+          <li>Co-write splits available for vocalists and artists</li>
           <li>Turnaround 10–21 days with 50% deposit</li>
         </ul>
         <div class="aside-cards">
           <div class="aside-card">
             <div class="aside-card-title">Licensing Options</div>
-            <div class="aside-card-body">Personal · Creator (YouTube/TikTok) · Commercial (Brand/Jingle). Ask for rates and usage terms.</div>
+            <div class="aside-card-body">Personal · Creator (YouTube/TikTok) · Commercial (Brand/Jingle) · Sync (Film/TV/Ad). Ask for rates and usage terms.</div>
           </div>
           <div class="aside-card">
             <div class="aside-card-title">What you receive</div>
@@ -1131,18 +1341,18 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <div class="section-label">About</div>
-        <h2 class="section-title" style="margin-bottom:1.5rem;">Visayan Stories.<br>Global Ears.</h2>
-        <p>Zelhan is a Cebuano singer-songwriter blending the warmth of Visayan storytelling with contemporary alternative pop. He creates music that travels — from intimate ballads sung in Bisaya to viral hooks that resonate far beyond the islands.</p>
-        <p>His breakout single <strong>"Ikaw Ra"</strong> introduced his modern Bisaya sound. It was followed by heartfelt releases including <strong>"Pauli Na Ko"</strong>, <strong>"Langga,"</strong> and the phenomenon that became <strong>"Kaon Na Ta (Let's Eat)"</strong> — now past 1.28 million streams.</p>
-        <p>Today, Zelhan writes custom songs for weddings, brands, and life's defining moments — bringing Cebuano culture to global ears, one story at a time.</p>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">The Craft<br>Behind the Numbers.</h2>
+        <p>Zelhan is a Cebuano composer and producer based in Cebu, Philippines. His compositions have reached <strong>68M+ combined streams</strong> — not through performance alone, but because the songwriting itself pulls audiences in across borders and languages.</p>
+        <p>His breakout composition <strong>"Kaon Na Ta (Let's Eat)"</strong> became a phenomenon with 59.5M+ Spotify streams. Heartfelt works including <strong>"Pauli Na Ko,"</strong> <strong>"Langga,"</strong> and <strong>"Ikaw Ra"</strong> established Zelhan as a distinctive voice in Cebuano pop and OPM.</p>
+        <p>Today, Zelhan is repositioning as a composer-for-hire and co-writer — available for vocalists, artists, brands, and sync supervisors who want a proven melodic mind on their project.</p>
         <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem;">
-          <a class="btn-primary" href="/cdn-cgi/l/email-protection#8eece1e1e5e7e0e9cef4ebe2e6efe0a0ede1e3">Book a Performance</a>
+          <a class="btn-primary" href="mailto:hello@zelhan.com">Book a Co-Write</a>
           <a class="btn-outline" href="#epk">View EPK</a>
         </div>
       </div>
       <div class="about-img reveal reveal-delay-1">
         <img src="https://i.ibb.co/s9HyDV2V/press-photo-zelhan.png" alt="Zelhan press photo">
-        <div class="about-img-caption">Zelhan · Cebu, Philippines</div>
+        <div class="about-img-caption">Zelhan · Composer & Producer · Cebu, Philippines</div>
       </div>
     </div>
   </div>
@@ -1152,15 +1362,14 @@
 <section class="section" id="epk" style="background:var(--warm-1);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="container">
     <div class="reveal">
-      <div class="section-label">Press</div>
+      <div class="section-label">Press & Industry</div>
       <h2 class="section-title">Electronic Press Kit</h2>
     </div>
-
     <div class="epk-cards reveal reveal-delay-1">
       <a class="epk-card" href="https://zelhan.com/press/Zelhan-EPK.pdf">
         <div class="epk-icon">📄</div>
-        <div class="epk-name">Download EPK (PDF)</div>
-        <div class="epk-desc">Bio, stream highlights, tech rider, and booking contact in one document.</div>
+        <div class="epk-name">Download Composer Kit (PDF)</div>
+        <div class="epk-desc">Bio, stream highlights, genre specialty, publishing credits, and booking contact — everything A&R and artists need.</div>
         <div class="epk-arrow">Download <span>→</span></div>
       </a>
       <a class="epk-card" href="https://zelhan.com/press/press-photos.zip">
@@ -1169,11 +1378,11 @@
         <div class="epk-desc">Hi-resolution images cleared for editorial and promotional use.</div>
         <div class="epk-arrow">Download ZIP <span>→</span></div>
       </a>
-      <a class="epk-card" href="/cdn-cgi/l/email-protection#1f7d7070747671785f657a73777e71317c7072">
+      <a class="epk-card" href="mailto:hello@zelhan.com">
         <div class="epk-icon">✉️</div>
-        <div class="epk-name">Booking & Media</div>
-        <div class="epk-desc">For show bookings, media requests, and licensing inquiries.</div>
-        <div class="epk-arrow"><span class="__cf_email__" data-cfemail="2d4f42424644434a6d574841454c43034e4240">[email&#160;protected]</span> <span>→</span></div>
+        <div class="epk-name">Sync & Publishing Enquiries</div>
+        <div class="epk-desc">For sync licensing, co-write sessions, show bookings, and media requests.</div>
+        <div class="epk-arrow">hello@zelhan.com <span>→</span></div>
       </a>
     </div>
   </div>
@@ -1185,12 +1394,12 @@
     <div class="connect-bar reveal">
       <div>
         <div class="connect-title">Follow Zelhan</div>
-        <div class="connect-sub">New releases, behind-the-song posts, and show dates.</div>
+        <div class="connect-sub">Behind-the-composition posts, new releases, and collaboration updates.</div>
       </div>
       <div class="social-links">
         <a class="social-link" href="https://web.facebook.com/zelhantv" target="_blank" rel="noopener">Facebook</a>
         <a class="social-link" href="https://instagram.com/zelhan" target="_blank" rel="noopener">Instagram</a>
-        <a class="social-link" href="https://x.com/zelhantv" target="_blank" rel="noopener">X</a>
+        <a class="social-link" href="https://x.com/zelhantv" target="_blank" rel="noopener">X / Threads</a>
         <a class="social-link" href="https://www.youtube.com/channel/UCbOZnZhjmoxIWkO4zKfnDdA" target="_blank" rel="noopener">YouTube</a>
         <a class="social-link" href="https://zelhantv.com" target="_blank" rel="noopener">Blog</a>
         <a class="btn-primary" href="#commissions" style="font-size:.72rem;padding:.5rem 1rem;">Commission ↗</a>
@@ -1205,12 +1414,13 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo">Zel<span>han</span></div>
-        <p class="footer-tagline">Cebuano singer-songwriter blending Visayan storytelling with modern pop. From viral hits to heartfelt ballads — Zelhan crafts songs that travel.</p>
+        <p class="footer-tagline">Cebuano composer & producer. 68M+ streams composed from Cebu, Philippines. Available for co-writes, sync licensing, and custom commissions.</p>
       </div>
       <div>
         <div class="footer-col-title">Navigate</div>
         <ul class="footer-links">
           <li><a href="#listen">Music</a></li>
+          <li><a href="#services">Co-Write & Sync</a></li>
           <li><a href="#commissions">Commissions</a></li>
           <li><a href="#epk">EPK</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -1237,22 +1447,17 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> Zelhan. All rights reserved.</span>
-      <span>Cebu, Philippines · Cebuano Music for the World</span>
+      <span>Cebu, Philippines · Composer for the World</span>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Year
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Nav scroll state
   const nav = document.getElementById('mainNav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });
-
-  // Hamburger
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
   hamburger.addEventListener('click', () => {
@@ -1267,8 +1472,6 @@
       document.body.style.overflow = '';
     });
   });
-
-  // Reveal on scroll — add hidden class via JS so content visible without it
   const reveals = document.querySelectorAll('.reveal');
   reveals.forEach(el => el.classList.add('animate-ready'));
   const observer = new IntersectionObserver((entries) => {
